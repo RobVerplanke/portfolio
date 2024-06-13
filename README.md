@@ -15,7 +15,7 @@ Follow these steps to run the project locally:
 2. Navigate to the project directory:
 
    ```sh
-   cd my-portfolio
+   cd portfolio
    ```
 
 3. Install the dependencies:
