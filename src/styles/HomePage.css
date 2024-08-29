@@ -1,0 +1,21 @@
+/* Custom properties */
+:root {
+  --font-color-dark: #050505;
+}
+
+.main-sidebar,
+.main-content-container {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main-content-container {
+  padding-top: 30px;
+}
+
+.content-title {
+  color: var(--font-color-dark);
+}
