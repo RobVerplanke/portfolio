@@ -1,4 +1,5 @@
-import { ProductCardSmall } from '../ProjectCardSmall';
+import { ProjectCardSmall } from '../ProjectCardSmall';
+import { projects } from '../../data/projects.js';
 import '../../styles/HomePage.css';
 
 function Home() {
@@ -8,7 +9,7 @@ function Home() {
         <div className="main-sidebar"></div>
         <div className="main-content-container">
           <div className="content-title">
-            <h2>I&apos;m an aspiring Front-End Developer</h2>
+            <h2>An aspiring Front-End Developer</h2>
           </div>
           <div className="content-text">
             <p>
@@ -24,9 +25,9 @@ function Home() {
             </p>
           </div>
           <div className="content-projects-preview">
-            {ProductCardSmall('Project 1')}
-            {ProductCardSmall('Project 2')}
-            {ProductCardSmall('Project 3')}
+            <h3>Project selection</h3>
+            {ProjectCardSmall(projects[0])}
+            {ProjectCardSmall(projects[1])}
           </div>
         </div>
         <div className="main-sidebar"></div>
