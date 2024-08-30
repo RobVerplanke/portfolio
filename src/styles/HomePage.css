@@ -19,3 +19,7 @@
 .content-title {
   color: var(--font-color-dark);
 }
+
+.content-projects-preview {
+  margin-top: 40px;
+}
