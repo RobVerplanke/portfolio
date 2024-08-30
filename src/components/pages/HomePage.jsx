@@ -1,6 +1,16 @@
-import { ProjectCardSmall } from '../ProjectCardSmall';
+import { CreateSmallCard } from '../CreateSmallCard';
 import { projects } from '../../data/projects.js';
 import '../../styles/HomePage.css';
+
+const FIRST_PROJECT_ID = 1;
+const SECOND_PROJECT_ID = 2;
+
+const selectedProjectOne = projects.find(
+  (project) => project.id === FIRST_PROJECT_ID
+);
+const selectedProjecTwo = projects.find(
+  (project) => project.id === SECOND_PROJECT_ID
+);
 
 function Home() {
   return (
@@ -26,8 +36,9 @@ function Home() {
           </div>
           <div className="content-projects-preview">
             <h3>Project selection</h3>
-            {ProjectCardSmall(projects[0])}
-            {ProjectCardSmall(projects[1])}
+            <CreateSmallCard value={selectedProjectOne} />
+            <CreateSmallCard value={selectedProjecTwo} />
+            <CreateSmallCard value={selectedProjectOne} />
           </div>
         </div>
         <div className="main-sidebar"></div>
