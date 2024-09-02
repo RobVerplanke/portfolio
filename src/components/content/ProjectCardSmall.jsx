@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import screenshot from '../../assets/shopping-cart-xs.png';
+import screenshot from '../../assets/shopping-cart-s.png';
 import truncateString from '../../utils/helperFunctions.jsx';
 import '../../styles/ProjectCardSmall.css';
 
