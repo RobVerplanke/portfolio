@@ -1,5 +1,5 @@
-import { CreateSmallCard } from './CreateSmallCard.jsx';
-import { useData } from '../context/DataContext.jsx';
+import { ProjectCardSmall } from './ProjectCardSmall.jsx';
+import { useData } from '../../context/DataContext.jsx';
 
 // Get selection of projects and create a card for each of them
 export function ProjectSelection() {
@@ -9,7 +9,7 @@ export function ProjectSelection() {
     <>
       <h3>Project selection</h3>
       {selectedProjects.map((project) => (
-        <CreateSmallCard key={project.id} value={project} />
+        <ProjectCardSmall key={project.id} value={project} />
       ))}
     </>
   );

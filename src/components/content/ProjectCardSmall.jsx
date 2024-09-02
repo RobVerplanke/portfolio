@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
-import screenshot from '../assets/shopping-cart-xs.png';
-import '../styles/ProjectCardSmall.css';
+import screenshot from '../../assets/shopping-cart-xs.png';
+import '../../styles/ProjectCardSmall.css';
 
-export function CreateSmallCard(props) {
+export function ProjectCardSmall(props) {
   const { title, description, liveLink, codeLink } = props.value;
   return (
     <div className="projects-preview-card">

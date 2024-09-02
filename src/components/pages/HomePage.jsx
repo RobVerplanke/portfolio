@@ -1,5 +1,5 @@
-import { HomePageTextContent } from '../HomePageTextContent.jsx';
-import { ProjectSelection } from '../ProjectSelection.jsx';
+import { HomePageTextContent } from '../content/HomePageTextContent.jsx';
+import { ProjectSelection } from '../content/ProjectSelection.jsx';
 
 function Home() {
   return (
