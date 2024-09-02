@@ -2,7 +2,7 @@ import App from './App';
 import Home from './pages/HomePage';
 import Projects from './pages/ProjectsPage';
 import About from './pages/AboutPage';
-import Contact from './pages/ContectPage';
+import Contact from './pages/ContactPage';
 import Errorpage from './pages/ErrorPage';
 
 const routes = [
