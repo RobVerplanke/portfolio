@@ -1,8 +1,10 @@
+import { MainSidebar } from '../MainSidebar';
+
 function Projects() {
   return (
     <>
       <main>
-        <div className="main-sidebar"></div>
+        <MainSidebar />
         <div className="main-content-container">
           <div className="content-title">
             <h2>Projects</h2>
@@ -16,7 +18,7 @@ function Projects() {
             </p>
           </div>
         </div>
-        <div className="main-sidebar"></div>
+        <MainSidebar />
       </main>
     </>
   );

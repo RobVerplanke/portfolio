@@ -1,3 +1,4 @@
+import { MainSidebar } from '../MainSidebar.jsx';
 import { CreateSmallCard } from '../CreateSmallCard';
 import { projects } from '../../data/projects.js';
 import '../../styles/HomePage.css';
@@ -16,7 +17,7 @@ function Home() {
   return (
     <>
       <main>
-        <div className="main-sidebar"></div>
+        <MainSidebar />
         <div className="main-content-container">
           <div className="content-title">
             <h2>An aspiring Front-End Developer</h2>
@@ -30,8 +31,12 @@ function Home() {
               <br />
               <br />
               This portfolio showcases my journey so far, featuring projects
-              that highlight my growing skills in HTML, CSS, JavaScript, and
-              React.
+              that highlight my growing skills in HTML,
+              <br /> CSS, JavaScript, and React. This portfolio showcases my
+              journey so far,
+              <br />
+              <br /> featuring projects that highlight my growing skills in
+              HTML, CSS, JavaScript, and React.
             </p>
           </div>
           <div className="content-projects-preview">
@@ -41,7 +46,7 @@ function Home() {
             <CreateSmallCard value={selectedProjectOne} />
           </div>
         </div>
-        <div className="main-sidebar"></div>
+        <MainSidebar />
       </main>
     </>
   );
