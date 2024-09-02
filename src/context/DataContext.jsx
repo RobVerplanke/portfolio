@@ -9,7 +9,7 @@ const DataContext = createContext();
 
 export function DataProvider({ children }) {
   // Provide projects to components that need to render 'Project selection' content
-  const [selectedProjects, selsectedPprojects] = useState(getAllProjects());
+  const [selectedProjects, setSelectedProjects] = useState(getAllProjects());
 
   return (
     <DataContext.Provider value={{ selectedProjects }}>
