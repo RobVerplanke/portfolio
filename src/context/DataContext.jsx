@@ -1,26 +1,20 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 /* eslint-disable react-refresh/only-export-components */
-import { createContext, useContext, useEffect, useState } from 'react';
+
+import { createContext, useContext, useState } from 'react';
+import getAllProjects from '../data/projects.js';
 
 const DataContext = createContext();
 
 export function DataProvider({ children }) {
-  const [projects, setProjects] = useState([]);
-
-  // Fetch data
-  useEffect(() => {
-    setProjects({
-      id: 1,
-      title: 'Shopping cart project',
-      image: 'thumbnail.jpg',
-      description: 'A mock webshop',
-      livePreviewLink: 'www.live-link.nl',
-      ViewCodeLink: 'www.code-link',
-    });
-  }, []);
+  // Provide projects to components that need to render 'Project selection' content
+  const [selectedProjects, selsectedPprojects] = useState(getAllProjects());
 
   return (
-    <DataContext.Provider value={{ projects }}>{children}</DataContext.Provider>
+    <DataContext.Provider value={{ selectedProjects }}>
+      {children}
+    </DataContext.Provider>
   );
 }
 

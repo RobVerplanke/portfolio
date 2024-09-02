@@ -3,6 +3,7 @@ import { ProjectSelection } from '../ProjectSelection.jsx';
 function Home() {
   return (
     <main>
+      {/* Display title and introduction text */}
       <h2>An aspiring Front-End Developer</h2>
       <p>
         <i>
@@ -18,6 +19,8 @@ function Home() {
         <br /> featuring projects that highlight my growing skills in HTML, CSS,
         JavaScript, and React.
       </p>
+
+      {/* Display 'Project selection' content */}
       <ProjectSelection />
     </main>
   );

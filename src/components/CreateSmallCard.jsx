@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-
 import screenshot from '../assets/shopping-cart-xs.png';
 import '../styles/ProjectCardSmall.css';
 
