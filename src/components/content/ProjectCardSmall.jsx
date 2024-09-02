@@ -1,6 +1,10 @@
 /* eslint-disable react/prop-types */
 import screenshot from '../../assets/shopping-cart-xs.png';
+import truncateString from '../../utils/helperFunctions.jsx';
 import '../../styles/ProjectCardSmall.css';
+
+// Maximum length of the description in the small card component
+const DESCRIPTION_MAX_LENGTH = 180;
 
 export function ProjectCardSmall(props) {
   const { title, description, liveLink, codeLink } = props.value;
@@ -27,9 +31,8 @@ export function ProjectCardSmall(props) {
         <div className="card-title">
           <p>{title}</p>
         </div>
-        <hr />
         <div className="card-description">
-          <p>{description}</p>
+          <p>{truncateString(description, DESCRIPTION_MAX_LENGTH)}</p>
         </div>
       </div>
     </div>

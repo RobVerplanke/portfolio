@@ -11,8 +11,6 @@
   background-color: var(--card-background-color);
   border-radius: 5px;
   margin: 30px 0 20px 0;
-  padding-bottom: 5px;
-
   outline: 1px solid #acacac;
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.2);
 }
@@ -24,12 +22,10 @@
 }
 
 .right-container {
-  padding: 10px;
-}
-
-.project-links a {
-  font-size: 0.7em;
-  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 13px;
 }
 
 .image-container img {
@@ -49,12 +45,31 @@
   min-width: 100%;
 }
 
+.project-links a {
+  font-size: 0.7em;
+  font-weight: 700;
+}
+
+.description-link {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 10px 10px 0 10px;
+  min-width: 100%;
+}
+
 .card-title {
   font-weight: 700;
   padding-bottom: 3px;
 }
 
 .card-description {
-  padding-top: 5px;
   font-size: 0.8em;
+  padding-top: 5px;
+}
+
+.card-description-content {
+  font-size: 0.9em;
+  font-weight: 700;
+  margin-left: 5px;
 }
