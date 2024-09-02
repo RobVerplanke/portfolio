@@ -1,7 +1,7 @@
 export const projects = [
   {
     id: 1,
-    title: 'Mock Webshop',
+    title: 'Multi Shopee - Mock webshop',
     description:
       'A mocked webshop with functional shopping cart and shopping page',
     image: '../assets/shopping-cart-small.png',

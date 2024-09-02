@@ -15,7 +15,7 @@ function Header() {
         <div className={'header-right-nav'}>
           <div className={'nav-container'}>
             <div className="nav-button">
-              <Link to="/home">Contact</Link>
+              <Link to="/contact">Contact</Link>
             </div>
           </div>
         </div>

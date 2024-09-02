@@ -5,6 +5,10 @@
   --button-bg-color-hover: #b5b5b5;
 }
 
+.header-logo {
+  padding-left: 20px;
+}
+
 .header-logo,
 .header-center-nav,
 .header-right-nav {

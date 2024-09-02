@@ -1,8 +1,6 @@
-import { ProjectSelection } from '../ProjectSelection.jsx';
-
-function Home() {
+export function HomePageText() {
   return (
-    <main>
+    <>
       <h2>An aspiring Front-End Developer</h2>
       <p>
         <i>
@@ -18,9 +16,6 @@ function Home() {
         <br /> featuring projects that highlight my growing skills in HTML, CSS,
         JavaScript, and React.
       </p>
-      <ProjectSelection />
-    </main>
+    </>
   );
 }
-
-export default Home;
