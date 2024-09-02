@@ -6,6 +6,7 @@ export function CreateSmallCard(props) {
   const { title, description, liveLink, codeLink } = props.value;
   return (
     <div className="projects-preview-card">
+      {/* Display image and links on the left side */}
       <div className="left-container">
         <div className="image-container">
           <img src={screenshot} alt="Project image" />
@@ -20,6 +21,8 @@ export function CreateSmallCard(props) {
           </a>
         </div>
       </div>
+
+      {/* Display text content on the right side */}
       <div className="right-container">
         <div className="card-title">
           <p>{title}</p>
