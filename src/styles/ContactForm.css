@@ -1,0 +1,33 @@
+/* Custom properties */
+
+:root {
+  --card-background-color: #b5b5b5;
+  --card-link-color: #00ffff;
+  --input-background-color: #ffffff;
+}
+
+.form-holder {
+  background-color: var(--card-background-color);
+  border-radius: 3px;
+  margin: 30px 0 30px 0;
+  padding: 10px 20px 10px 10px;
+  outline: 2px solid #acacac;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+form {
+  padding-top: 20px;
+}
+
+input,
+textarea {
+  max-width: 500px;
+  width: 100%;
+  border: none;
+  background-color: var(--input-background-color);
+}
+
+textarea {
+  min-height: 100px;
+  margin-bottom: 10px;
+}

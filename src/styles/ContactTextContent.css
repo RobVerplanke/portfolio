@@ -1,0 +1,28 @@
+/* Custom properties */
+:root {
+  --font-color: #050505;
+}
+
+.contact-icons-holder span {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+
+  font-size: 1em;
+  color: var(--font-color);
+}
+
+.contact-email,
+.contact-linkedin,
+.contact-github {
+  display: flex;
+  align-items: start;
+}
+
+.contact-icons-holder a {
+  cursor: pointer;
+}
+
+.contact-info-text {
+  padding-left: 5px;
+}

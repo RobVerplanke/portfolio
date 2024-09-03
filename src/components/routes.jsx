@@ -4,6 +4,7 @@ import Projects from './pages/ProjectsPage';
 import About from './pages/AboutPage';
 import Contact from './pages/ContactPage';
 import Errorpage from './pages/ErrorPage';
+import ThankYouMessage from './content/ThankYouMessage';
 
 const routes = [
   {
@@ -30,6 +31,10 @@ const routes = [
       {
         path: 'contact',
         element: <Contact />,
+      },
+      {
+        path: 'thank-you',
+        element: <ThankYouMessage />,
       },
     ],
   },
