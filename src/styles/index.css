@@ -10,6 +10,10 @@
   --button-hover-color: #636363;
   --font-color-dark: #050505;
   --app-background-color: #dbdbdb;
+  --link-bg-color: #00ffff;
+  --link-bg-color-hover: #b5b5b5;
+  --button-bg-color: #00ffff;
+  --button-bg-color-hover: #777777;
 
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
@@ -69,11 +73,23 @@ a {
   cursor: default;
 }
 
-a:hover {
-  display: inline-block;
-  position: relative;
-  transform: translateY(-2px);
-  transition: transform 0.3s ease;
+button {
+  font-size: 1.4em;
+  color: var(--font-color-dark);
+  background-color: var(--button-bg-color);
+  border: none;
+  border-radius: 8px;
+  padding: 3px 15px 3px 15px;
+}
+
+button:hover {
+  background-color: var(--button-bg-color-hover);
+  transition: background-color 0.25s;
+}
+
+label {
+  font-size: 0.9em;
+  color: var(--font-color-dark);
 }
 
 h1,
@@ -92,27 +108,8 @@ h2 {
 }
 
 h3 {
-  padding-top: 80px;
+  /* padding-top: 80px; */
   font-size: 1.3em;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 
 @media (prefers-color-scheme: light) {
