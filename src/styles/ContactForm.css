@@ -4,6 +4,7 @@
   --card-background-color: #b5b5b5;
   --card-link-color: #00ffff;
   --input-background-color: #ffffff;
+  --font-color-dark: #050505;
 }
 
 .form-holder {
@@ -21,10 +22,17 @@ form {
 
 input,
 textarea {
+  padding: 2px 0 2px 5px;
   max-width: 500px;
   width: 100%;
   border: none;
+  border-radius: 3px;
+  color: var(--font-color-dark);
   background-color: var(--input-background-color);
+}
+
+input {
+  min-height: 20px;
 }
 
 textarea {
