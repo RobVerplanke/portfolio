@@ -16,19 +16,20 @@ export default function ContactForm() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // POST the encoded form with the content-type header that's required for a text submission
-    // Note that the header will be different for POSTing a file
+
+    const form = event.target;
+    const formData = new FormData(form);
+    const formEntries = Object.fromEntries(formData.entries());
+
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({
-        'form-name': event.target.getAttribute('name'),
-        ...name,
+        'form-name': form.getAttribute('name'),
+        ...formEntries,
       }),
     })
-      // On success, redirect to the custom success page using Gatsby's `navigate` helper function
-      .then(() => navigate('/thank-you/'))
-      // On error, show the error in an alert
+      .then(() => navigate('/thank-you'))
       .catch((error) => alert(error));
   };
 
