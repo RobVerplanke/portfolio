@@ -9,7 +9,7 @@ export default function ContactForm() {
 
         <form
           name="contact"
-          // action="/thank-you"
+          action="/thank-you"
           method="POST"
           data-netlify="true"
         >
