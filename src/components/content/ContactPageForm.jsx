@@ -1,7 +1,14 @@
 /* eslint-disable react/no-unknown-property */
+import { useNavigate } from 'react-router-dom';
 import '../../styles/ContactForm.css';
 
 export default function ContactForm() {
+  const navigate = useNavigate();
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    navigate('/thank-you');
+  };
   return (
     <>
       <div className="form-holder">
@@ -9,9 +16,9 @@ export default function ContactForm() {
 
         <form
           name="contact"
-          // action="/thank-you"
           method="POST"
           data-netlify="true"
+          onSubmit={handleSubmit}
         >
           <input type="hidden" name="contact-form" value="contact" />
 
