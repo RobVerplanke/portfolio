@@ -3,16 +3,20 @@
 /* eslint-disable react-refresh/only-export-components */
 
 import { createContext, useContext, useState } from 'react';
-import getAllProjects from '../data/projects.js';
+import getAllProjectsData from '../data/getAllProjects.js';
+import getSelectedProjectsData from '../data/getSelectedProjects.js';
 
 const DataContext = createContext();
 
 export function DataProvider({ children }) {
-  // Provide projects to components that need to render 'Project selection' content
-  const [selectedProjects, setSelectedProjects] = useState(getAllProjects());
+  // Provide project data to components that need to display project cards
+  const [allProjects, setAllProjects] = useState(getAllProjectsData());
+  const [selectedProjects, setSelectedProjects] = useState(
+    getSelectedProjectsData()
+  );
 
   return (
-    <DataContext.Provider value={{ selectedProjects }}>
+    <DataContext.Provider value={{ selectedProjects, allProjects }}>
       {children}
     </DataContext.Provider>
   );

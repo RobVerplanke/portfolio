@@ -1,22 +1,20 @@
+import { useData } from '../../context/DataContext.jsx';
+import { ProjectCardLarge } from '../content/ProjectCardLarge';
+
 function Projects() {
+  const { allProjects } = useData();
+
   return (
-    <>
-      <main>
-        <div className="main-content-container">
-          <div className="content-title">
-            <h2>Projects</h2>
-          </div>
-          <div className="content-text">
-            <p>
-              <i>
-                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua.
-              </i>
-            </p>
-          </div>
+    <main>
+      <div className="main-content-container">
+        <div className="content-title">
+          <h2>Recent projects</h2>
         </div>
-      </main>
-    </>
+        {allProjects.map((project) => (
+          <ProjectCardLarge key={project.id} value={project} />
+        ))}
+      </div>
+    </main>
   );
 }
 
