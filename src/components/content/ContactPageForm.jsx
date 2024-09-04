@@ -8,8 +8,6 @@ export default function ContactForm() {
         <h3>Direct message</h3>
 
         <form name="contact" action="/thank-you" data-netlify="true">
-          <input type="hidden" name="form-name" value="contact" />
-
           <label htmlFor="subject">Subject:</label>
           <br />
           <input type="text" id="subject" name="subject" />
