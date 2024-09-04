@@ -1,13 +1,35 @@
 /* eslint-disable react/no-unknown-property */
 import { useNavigate } from 'react-router-dom';
+
 import '../../styles/ContactForm.css';
 
 export default function ContactForm() {
   const navigate = useNavigate();
 
+  function encode(data) {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])
+      )
+      .join('&');
+  }
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    navigate('/thank-you');
+    // POST the encoded form with the content-type header that's required for a text submission
+    // Note that the header will be different for POSTing a file
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({
+        'form-name': event.target.getAttribute('name'),
+        ...name,
+      }),
+    })
+      // On success, redirect to the custom success page using Gatsby's `navigate` helper function
+      .then(() => navigate('/thank-you/'))
+      // On error, show the error in an alert
+      .catch((error) => alert(error));
   };
 
   return (
