@@ -7,6 +7,13 @@
     <title>Portfolio - Rob Verplanke</title>
   </head>
   <body>
+    <!-- static HTML version of the contact form for Netlify to recognize a submit -->
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="subject" />
+      <textarea name="message"></textarea>
+    </form>
+    <!--  -->
+
     <div id="root">
       <script type="module" src="/src/main.jsx"></script>
     </div>
