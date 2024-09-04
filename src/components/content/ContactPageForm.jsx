@@ -10,7 +10,7 @@ export default function ContactForm() {
         <form
           name="contact"
           action="/thank-you"
-          method="POST"
+          // method="POST"
           data-netlify="true"
         >
           <input type="hidden" name="contact-form" value="contact" />
