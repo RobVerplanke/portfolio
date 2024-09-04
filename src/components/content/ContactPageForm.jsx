@@ -7,7 +7,7 @@ export default function ContactForm() {
       <div className="form-holder">
         <h3>Direct message</h3>
 
-        <form name="contact" action="/thank-you" netlify data-netlify="true">
+        <form name="contact" action="/thank-you" data-netlify="true">
           <input type="hidden" name="form-name" value="contact" />
 
           <label htmlFor="subject">Subject:</label>
