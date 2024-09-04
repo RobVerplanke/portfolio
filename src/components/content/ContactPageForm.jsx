@@ -7,13 +7,7 @@ export default function ContactForm() {
       <div className="form-holder">
         <h3>Direct message</h3>
 
-        <form
-          name="contact"
-          action="/thank-you"
-          method="POST"
-          data-netlify="true"
-          netlify-honeypot="bot-field"
-        >
+        <form name="contact" netlify>
           <input type="hidden" name="form-name" value="contact" />
 
           <label htmlFor="subject">Subject:</label>
