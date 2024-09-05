@@ -9,10 +9,10 @@
 .projects-page-card {
   display: flex;
   flex-direction: column;
-  max-width: 540px;
+  width: 540px;
   background-color: var(--card-background-color);
   border-radius: 3px;
-  padding: 30px 50px 15px 40px;
+  padding: 30px 0 15px 0;
   margin: 30px 0 20px 0;
   outline: 2px solid #acacac;
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.2);
@@ -23,7 +23,9 @@
 }
 
 .image-large-container {
-  padding: 0 10px 0 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .card-large-links {
@@ -31,11 +33,12 @@
   align-items: center;
   justify-content: space-around;
 
-  padding: 0 10px 0 10px;
-  min-width: 100%;
+  padding: 5px 30px 0 30px;
+  width: 100%;
 }
 
 .card-large-links a {
+  cursor: pointer;
   font-size: 0.8em;
   font-weight: 700;
 }
@@ -48,13 +51,13 @@
 
 .card-large-description {
   font-size: 0.8em;
-  padding: 20px 30px 0 25px;
+  padding: 20px 60px 0 60px;
 }
 
 .card-large-skills {
   border-top: 1px solid var(--card-border-color);
   display: flex;
   gap: 15px;
-  padding: 15px 0 0 10px;
-  margin: 20px 0 0 10px;
+  padding: 15px 0 0 0;
+  margin: 30px 30px 0 30px;
 }

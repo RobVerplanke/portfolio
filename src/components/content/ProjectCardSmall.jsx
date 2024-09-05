@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-import screenshot from '../../assets/shopping-cart-s.png';
 import truncateString from '../../utils/helperFunctions.jsx';
 import '../../styles/ProjectCardSmall.css';
 
@@ -7,13 +6,13 @@ import '../../styles/ProjectCardSmall.css';
 const DESCRIPTION_MAX_LENGTH = 180;
 
 export function ProjectCardSmall(props) {
-  const { title, description, liveLink, codeLink } = props.value;
+  const { title, description, imageSmall, liveLink, codeLink } = props.value;
   return (
     <div className="projects-preview-card">
       {/* Display image and links on the left side */}
       <div className="left-container">
         <div className="image-container">
-          <img src={screenshot} alt="Project image" />
+          <img src={imageSmall} alt="Project image" />
         </div>
         <div className="project-links">
           <a href={liveLink} target="_blank">

@@ -3,11 +3,10 @@ import htmlIcon from '../../assets/icons/html-icon.png';
 import csslIcon from '../../assets/icons/css-icon.png';
 import jsIcon from '../../assets/icons/js-icon.png';
 import reactIcon from '../../assets/icons/react-icon.png';
-import screenshot from '../../assets/shopping-cart-m.png';
 import '../../styles/ProjectCardLarge.css';
 
 export function ProjectCardLarge(props) {
-  const { title, description, liveLink, codeLink } = props.value;
+  const { title, description, imageMed, liveLink, codeLink } = props.value;
   return (
     <>
       {/* <div>nav</div> */}
@@ -17,7 +16,7 @@ export function ProjectCardLarge(props) {
         </div>
 
         <div className="image-large-container">
-          <img src={screenshot} alt="Project image" />
+          <img src={imageMed} alt="Project image" />
         </div>
         <br />
 

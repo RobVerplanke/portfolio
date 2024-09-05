@@ -5,7 +5,8 @@ export default function getAllProjects() {
       title: 'Multi Shopee - Mock webshop',
       description:
         'This project demonstrates the use of React for building a mock shopping cart application. It includes features such as routing, state management, data fetching from an API and component testing with React Testing Library.',
-      image: '../assets/shopping-cart-small.png',
+      imageSmall: '/src/assets/screenshots/shopping-cart-s.png',
+      imageMed: '/src/assets/screenshots/shopping-cart-m.png',
       liveLink: 'https://lovely-vacherin-d4496c.netlify.app/',
       codeLink: 'https://github.com/RobVerplanke/project-shopping-cart',
     },
@@ -14,7 +15,8 @@ export default function getAllProjects() {
       title: 'Multi Shopee - Mock webshop',
       description:
         'This project demonstrates the use of React for building a mock shopping cart application. It includes features such as routing, state management, data fetching from an API and component testing with React Testing Library.',
-      image: '../assets/shopping-cart-small.png',
+      imageSmall: '/src/assets/screenshots/shopping-cart-s.png',
+      imageMed: '/src/assets/screenshots/shopping-cart-m.png',
       liveLink: 'https://lovely-vacherin-d4496c.netlify.app/',
       codeLink: 'https://github.com/RobVerplanke/project-shopping-cart',
     },
@@ -23,7 +25,8 @@ export default function getAllProjects() {
       title: 'Multi Shopee - Mock webshop',
       description:
         'This project demonstrates the use of React for building a mock shopping cart application. It includes features such as routing, state management, data fetching from an API and component testing with React Testing Library.',
-      image: '../assets/shopping-cart-small.png',
+      imageSmall: '/src/assets/screenshots/shopping-cart-s.png',
+      imageMed: '/src/assets/screenshots/shopping-cart-m.png',
       liveLink: 'https://lovely-vacherin-d4496c.netlify.app/',
       codeLink: 'https://github.com/RobVerplanke/project-shopping-cart',
     },
@@ -32,7 +35,8 @@ export default function getAllProjects() {
       title: 'Multi Shopee - Mock webshop',
       description:
         'This project demonstrates the use of React for building a mock shopping cart application. It includes features such as routing, state management, data fetching from an API and component testing with React Testing Library.',
-      image: '../assets/shopping-cart-small.png',
+      imageSmall: '/src/assets/screenshots/shopping-cart-s.png',
+      imageMed: '/src/assets/screenshots/shopping-cart-m.png',
       liveLink: 'https://lovely-vacherin-d4496c.netlify.app/',
       codeLink: 'https://github.com/RobVerplanke/project-shopping-cart',
     },
@@ -41,7 +45,8 @@ export default function getAllProjects() {
       title: 'Multi Shopee - Mock webshop',
       description:
         'This project demonstrates the use of React for building a mock shopping cart application. It includes features such as routing, state management, data fetching from an API and component testing with React Testing Library.',
-      image: '../assets/shopping-cart-small.png',
+      imageSmall: '/src/assets/screenshots/shopping-cart-s.png',
+      imageMed: '/src/assets/screenshots/shopping-cart-m.png',
       liveLink: 'https://lovely-vacherin-d4496c.netlify.app/',
       codeLink: 'https://github.com/RobVerplanke/project-shopping-cart',
     },
