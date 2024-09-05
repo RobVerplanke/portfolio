@@ -6,17 +6,21 @@ import '../../styles/ContactTextContent.css';
 
 export default function ContactPageTextContent() {
   return (
-    <>
+    <section>
       <h2>Contact information</h2>
       <div className="contact-icons-holder">
         <div className="contact-email">
-          <a href="http://">
+          <a aria-label="Link to e-mail adres" href="http://">
             <AlternateEmailIcon />
           </a>
           <span className="contact-info-text">rverplanke@gmail.com</span>
         </div>
         <div className="contact-linkedin">
-          <a target="_blank" href="http://www.linkedin.com/in/rob-verplanke-jr">
+          <a
+            aria-label="Link to LinkedIn"
+            target="_blank"
+            href="http://www.linkedin.com/in/rob-verplanke-jr"
+          >
             <LinkedInIcon />
           </a>
           <span className="contact-info-text">
@@ -24,12 +28,16 @@ export default function ContactPageTextContent() {
           </span>
         </div>
         <div className="contact-github">
-          <a target="_blank" href="http://www.github.com/RobVerplanke">
+          <a
+            aria-label="Link to Github"
+            target="_blank"
+            href="http://www.github.com/RobVerplanke"
+          >
             <GitHubIcon />
           </a>
           <span className="contact-info-text">github.com/RobVerplanke</span>
         </div>
       </div>
-    </>
+    </section>
   );
 }

@@ -34,7 +34,7 @@ export default function ContactForm() {
   };
 
   return (
-    <>
+    <section>
       <div className="form-holder">
         <h3>Direct message</h3>
 
@@ -67,9 +67,11 @@ export default function ContactForm() {
           <br />
           <br />
 
-          <button type="submit">Send</button>
+          <button type="submit" aria-label="Send message">
+            Send
+          </button>
         </form>
       </div>
-    </>
+    </section>
   );
 }

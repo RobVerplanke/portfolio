@@ -6,9 +6,10 @@ import reactIcon from '../../assets/icons/react-icon.png';
 import '../../styles/ProjectCardLarge.css';
 
 export function ProjectCardLarge(props) {
-  const { title, description, imageMed, liveLink, codeLink } = props.value;
+  const { title, description, imageMed, altText, liveLink, codeLink } =
+    props.value;
   return (
-    <>
+    <article>
       {/* <div>nav</div> */}
       <div className="projects-page-card">
         <div className="card-large-title">
@@ -16,7 +17,7 @@ export function ProjectCardLarge(props) {
         </div>
 
         <div className="image-large-container">
-          <img src={imageMed} alt="Project image" />
+          <img src={imageMed} alt={altText} />
         </div>
         <br />
 
@@ -43,6 +44,6 @@ export function ProjectCardLarge(props) {
           <img src={reactIcon} alt="React icon" />
         </div>
       </div>
-    </>
+    </article>
   );
 }

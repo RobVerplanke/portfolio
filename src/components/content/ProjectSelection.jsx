@@ -6,11 +6,11 @@ export function ProjectSelection() {
   const { selectedProjects } = useData();
 
   return (
-    <>
+    <section>
       <h3>Project selection</h3>
       {selectedProjects.map((project) => (
         <ProjectCardSmall key={project.id} value={project} />
       ))}
-    </>
+    </section>
   );
 }

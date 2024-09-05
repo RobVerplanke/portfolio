@@ -1,6 +1,6 @@
 export function HomePageTextContent() {
   return (
-    <>
+    <section>
       <h2>An aspiring Front-End Developer</h2>
       <p>
         <i>
@@ -16,6 +16,6 @@ export function HomePageTextContent() {
         <br /> featuring projects that highlight my growing skills in HTML, CSS,
         JavaScript, and React.
       </p>
-    </>
+    </section>
   );
 }
