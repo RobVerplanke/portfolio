@@ -57,10 +57,10 @@ export default function ContactForm() {
           />
           <br />
 
-          <label htmlFor="content">Message:</label>
+          <label htmlFor="message">Message:</label>
           <br />
           <textarea
-            id="content"
+            id="message"
             name="message"
             placeholder="Your message..."
           ></textarea>

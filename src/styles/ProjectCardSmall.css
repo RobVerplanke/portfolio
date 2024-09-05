@@ -2,6 +2,7 @@
 
 :root {
   --card-background-color: #b5b5b5;
+  --card-outline-color: #acacac;
   --card-link-color: #00ffff;
 }
 
@@ -12,7 +13,7 @@
   border-radius: 3px;
   margin: 30px 0 0 0;
   padding: 30px;
-  outline: 2px solid #acacac;
+  outline: 2px solid var(--card-outline-color);
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
