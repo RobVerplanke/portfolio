@@ -1,3 +1,11 @@
 .text-content-holder {
   margin-bottom: 60px;
+  max-width: 500px;
+}
+
+@media (max-width: 600px) {
+  .text-content-holder {
+    margin-bottom: 60px;
+    max-width: 300px;
+  }
 }

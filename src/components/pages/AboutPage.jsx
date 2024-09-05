@@ -1,8 +1,9 @@
 function About() {
   return (
-    <>
-      <main>
+    <main>
+      <section>
         <h2>Who am i</h2>
+        <br />
         <p>
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
           dolore eu fugiat nulla pariatur.
@@ -25,8 +26,8 @@ function About() {
           consectetur, adipisci velit, sed quia non numquam eius modi tempora
           incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
         </p>
-      </main>
-    </>
+      </section>
+    </main>
   );
 }
 

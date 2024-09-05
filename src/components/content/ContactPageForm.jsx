@@ -67,7 +67,11 @@ export default function ContactForm() {
           <br />
           <br />
 
-          <button type="submit" aria-label="Send message">
+          <button
+            className="button-highlight"
+            type="submit"
+            aria-label="Send message"
+          >
             Send
           </button>
         </form>

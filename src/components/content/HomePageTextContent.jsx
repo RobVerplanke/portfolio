@@ -2,6 +2,7 @@ export function HomePageTextContent() {
   return (
     <section>
       <h2>An aspiring Front-End Developer</h2>
+      <br />
       <p>
         <i>
           With a passion for learning and building intuitive web experiences.

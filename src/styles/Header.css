@@ -1,22 +1,42 @@
-/* Custom properties */
-:root {
-  --font-color: #050505;
-  --button-bg-color: #00ffff;
-  --button-bg-color-hover: #b5b5b5;
-}
-
 .header-logo {
-  padding-left: 20px;
-}
-
-.header-logo,
-.header-center-nav,
-.header-right-nav {
+  padding-right: 10px;
   flex: 1;
-  color: var(--font-color);
 }
 
-.nav-button {
+.header-nav {
+  flex: 1;
+  display: flex;
+  gap: 30px;
+}
+
+.header-empty-bar {
+  flex: 1;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+/* 
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/* .nav-button {
   background-color: var(--button-bg-color);
   border-radius: 8px;
   padding: 0 12px 0 10px;
@@ -32,4 +52,4 @@
   border-radius: 10px;
   background-color: var(--button-bg-color-hover);
   transition: background-color 0.25s;
-}
+} */

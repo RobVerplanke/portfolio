@@ -1,23 +1,18 @@
-import { Link } from 'react-router-dom';
+import HeaderLogo from '../header/HeaderLogo.jsx';
 import NavBar from './NavBar.jsx';
+
 import '../../styles/Header.css';
 
 function Header() {
   return (
     <header>
-      <div className={'header-logo'}>
-        <h1>Rob Verplanke jr.</h1>
+      <div className="header-logo">
+        <HeaderLogo />
       </div>
-      <div className={'header-center-nav'}>
+      <div className="header-nav">
         <NavBar />
       </div>
-      <div className={'header-right-nav'}>
-        <div className={'nav-container'}>
-          <div className="nav-button">
-            <Link to="/contact">Contact</Link>
-          </div>
-        </div>
-      </div>
+      <div className="header-empty-bar"></div>
     </header>
   );
 }

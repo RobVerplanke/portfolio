@@ -1,4 +1,4 @@
-import { MainSidebar } from './pages/EmptySidebar.jsx';
+import { EmptySidebar } from './pages/EmptySidebar.jsx';
 import { Outlet } from 'react-router-dom';
 import Header from './header/Header.jsx';
 import { DataProvider } from '../context/DataContext';
@@ -8,11 +8,11 @@ function App() {
     <div className="page-container">
       <Header />
       <div className="content-wrapper">
-        <MainSidebar />
+        <EmptySidebar />
         <DataProvider>
           <Outlet />
         </DataProvider>
-        <MainSidebar />
+        <EmptySidebar />
       </div>
     </div>
   );

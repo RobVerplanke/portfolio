@@ -8,6 +8,7 @@ export default function ContactPageTextContent() {
   return (
     <section>
       <h2>Contact information</h2>
+      <br />
       <div className="contact-icons-holder">
         <div className="contact-email">
           <a aria-label="Link to e-mail adres" href="http://">

@@ -9,6 +9,7 @@
 .projects-preview-card {
   display: flex;
   flex-direction: row;
+  max-width: 500px;
   background-color: var(--card-background-color);
   border-radius: 3px;
   margin: 30px 0 0 0;
@@ -68,4 +69,30 @@
   font-weight: 700;
   margin-left: 5px;
   cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .projects-preview-card {
+    max-width: 300px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .card-title {
+    padding-top: 20px;
+  }
+
+  .right-container {
+    padding-left: 5px;
+  }
+
+  .project-links {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+  }
 }

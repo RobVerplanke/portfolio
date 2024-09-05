@@ -1,5 +1,5 @@
-import '../../styles/MainSidebar.css';
+import '../../styles/EmptySidebar.css';
 
-export function MainSidebar() {
+export function EmptySidebar() {
   return <div className="main-sidebar"></div>;
 }
