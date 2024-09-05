@@ -49,12 +49,21 @@ export default function ContactForm() {
 
           <label htmlFor="subject">Subject:</label>
           <br />
-          <input type="text" id="subject" name="subject" />
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Subject..."
+          />
           <br />
 
           <label htmlFor="content">Message:</label>
           <br />
-          <textarea id="content" name="message"></textarea>
+          <textarea
+            id="content"
+            name="message"
+            placeholder="Your message..."
+          ></textarea>
           <br />
           <br />
 
