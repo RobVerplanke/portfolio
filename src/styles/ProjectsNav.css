@@ -1,18 +1,77 @@
 /* Custom properties */
 :root {
-  --card-background-color: #b5b5b5;
+  --border-color: #050505;
+  --font-color-dark: #333333;
+}
+
+.collapse-nav {
+  width: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-end;
+  align-items: center;
+  padding: 0 10px 5px 0;
+  cursor: pointer;
+  color: var(--font-color-dark);
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+main:last-child {
+  margin-bottom: 30px;
 }
 
 .projects-card-holder {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  /* background-color: var(--card-background-color); */
-  margin-bottom: 40px;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .project-item {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  width: 100%;
+  cursor: default;
+  color: var(--font-color-dark);
+  background-color: var(--card-background-color);
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color 0.2s ease-in-out, padding 1.2s ease-in-out;
+}
+
+.project-item > * {
+  color: var(--font-color-grey);
+}
+
+.project-item:first-child {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.project-item:last-child {
+  border-bottom: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.project-item:hover {
+  background-color: var(--link-bg-color);
+}
+
+.project-big-card {
+  padding-top: 5px;
+  background-color: var(--card-background-color);
+}
+
+.project-big-card {
+  padding-top: 0;
+  background-color: var(--card-background-color);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+}
+
+.project-item.open .project-big-card {
+  max-height: 1000px;
 }

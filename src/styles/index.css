@@ -7,8 +7,9 @@
 
 /* Custom properties */
 :root {
+  --border-top-color: #333333;
   --button-hover-color: #636363;
-  --font-color-dark: #050505;
+  --font-color-dark: #333333;
   --app-background-color: #dbdbdb;
   --link-bg-color: #00ffff;
   --link-bg-color-hover: #b5b5b5;
@@ -41,7 +42,7 @@ body {
 header {
   display: flex;
   background-color: var(--app-background-color);
-  border-top: 20px solid black;
+  border-top: 25px solid var(--border-top-color);
 }
 
 main {
