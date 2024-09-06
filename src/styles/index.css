@@ -165,9 +165,18 @@ nav a:last-child {
 }
 
 @media (max-width: 820px) {
+  main {
+    justify-content: center;
+    align-items: center;
+  }
   header {
     align-items: center;
     flex-direction: column;
+  }
+
+  .main-sidebar {
+    padding: 0 10px 0 10px;
+    flex: 0;
   }
 }
 

@@ -10,6 +10,7 @@
 .projects-page-card {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   max-width: var(--cards-max-width);
   padding: 10px 0 15px 0;
 }
