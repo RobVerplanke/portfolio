@@ -1,7 +1,7 @@
 // Shorten a string after a given amount of characters and end with dots to indicate there is more content
 export default function truncateString(string, maxLength) {
   //Check if shortening the string is necessary, if not just return the string
-  if (string.length <= maxLength) return { string };
+  if (string.length <= maxLength) return string;
 
   // Cut off the string from first to last character
   let truncatedString =
