@@ -37,7 +37,6 @@ export function ProjectCardSmall(props) {
           <a href={liveLink} target="_blank">
             Live preview
           </a>
-          {/* <p>|</p> */}
           <a href={codeLink} target="_blank">
             View code
           </a>
