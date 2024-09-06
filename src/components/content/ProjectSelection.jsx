@@ -7,11 +7,13 @@ export function ProjectSelection() {
   const { selectedProjects } = useData();
 
   return (
-    <section className="project-selection-holder">
+    <>
       <h3>Project selection</h3>
-      {selectedProjects.map((project) => (
-        <ProjectCardSmall key={project.id} value={project} />
-      ))}
-    </section>
+      <section className="project-selection-holder">
+        {selectedProjects.map((project) => (
+          <ProjectCardSmall key={project.id} value={project} />
+        ))}
+      </section>
+    </>
   );
 }
