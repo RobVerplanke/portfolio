@@ -6,8 +6,15 @@ import '../../styles/ProjectCardSmall.css';
 const DESCRIPTION_MAX_LENGTH = 180;
 
 export function ProjectCardSmall(props) {
-  const { title, description, imageSmall, altText, liveLink, codeLink } =
-    props.value;
+  const {
+    title,
+    subTitle,
+    description,
+    imageSmall,
+    altText,
+    liveLink,
+    codeLink,
+  } = props.value;
   return (
     <article>
       <div className="projects-preview-card">
@@ -30,7 +37,9 @@ export function ProjectCardSmall(props) {
         {/* Display text content on the right side */}
         <div className="right-container">
           <div className="card-title">
-            <p>{title}</p>
+            <p>
+              {title} - {subTitle}
+            </p>
           </div>
           <div className="card-description">
             <p>{truncateString(description, DESCRIPTION_MAX_LENGTH)}</p>

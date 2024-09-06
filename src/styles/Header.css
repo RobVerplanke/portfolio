@@ -1,5 +1,5 @@
 .header-logo {
-  padding-right: 10px;
+  /* margin-left: 20px; */
   flex: 1;
 }
 
@@ -19,37 +19,3 @@
     justify-content: flex-start;
   }
 }
-
-/* 
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-
-/* .nav-button {
-  background-color: var(--button-bg-color);
-  border-radius: 8px;
-  padding: 0 12px 0 10px;
-}
-
-.nav-button a:hover {
-  transform: none;
-}
-
-.nav-button:hover {
-  transform: none;
-  padding: 0 12px 0 10px;
-  border-radius: 10px;
-  background-color: var(--button-bg-color-hover);
-  transition: background-color 0.25s;
-} */

@@ -9,13 +9,7 @@
 .projects-page-card {
   display: flex;
   flex-direction: column;
-  width: 540px;
-  background-color: var(--card-background-color);
-  border-radius: 3px;
-  padding: 30px 0 15px 0;
-  margin: 30px 0 20px 0;
-  outline: 2px solid #acacac;
-  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px 0 15px 0;
 }
 
 .image-large-container img {
@@ -33,7 +27,7 @@
   align-items: center;
   justify-content: space-around;
   align-items: flex-start;
-  padding: 5px 30px 0 30px;
+  padding: 5px 50px 0 50px;
   width: 100%;
 }
 
@@ -43,22 +37,28 @@
   font-weight: 700;
 }
 
-.card-large-title {
+.card-large-title,
+.card-large-subtitle {
   text-align: center;
   font-weight: 700;
   padding-bottom: 20px;
 }
 
+.card-large-subtitle {
+  padding-top: 20px;
+}
+
 .card-large-description {
   font-size: 0.8em;
-  padding: 20px 60px 0 60px;
+  padding: 0 60px 0 60px;
 }
 
 .card-large-skills {
-  border-top: 1px solid var(--card-border-color);
+  border-bottom: 1px solid var(--card-border-color);
   display: flex;
+  justify-content: center;
   gap: 15px;
-  padding: 15px 0 0 0;
+  padding: 0 0 15px 0;
   margin: 30px 30px 0 30px;
 }
 
@@ -72,6 +72,6 @@
   }
 
   .card-large-description {
-    padding: 20px 10px 0 10px;
+    padding: 0 0 0 10px;
   }
 }

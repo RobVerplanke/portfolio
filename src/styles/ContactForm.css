@@ -12,6 +12,7 @@
   background-color: var(--card-background-color);
   border-radius: 3px;
   min-width: 300px;
+  max-width: 500px;
   margin: 60px 0 30px 0;
   padding: 10px 20px 10px 10px;
   outline: 2px solid var(--card-outline-color);
@@ -40,14 +41,4 @@ input {
 textarea {
   min-height: 100px;
   margin-bottom: 10px;
-}
-
-@media (max-width: 600px) {
-  .form-holder {
-    min-width: 300px;
-    margin: 60px 0 30px 0;
-    padding: 10px 20px 10px 10px;
-    outline: 2px solid var(--card-outline-color);
-    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.2);
-  }
 }
