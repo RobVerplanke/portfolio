@@ -4,11 +4,13 @@
   --card-background-color: #b5b5b5;
   --card-border-color: #757575;
   --card-link-color: #00ffff;
+  --cards-max-width: 600px;
 }
 
 .projects-page-card {
   display: flex;
   flex-direction: column;
+  max-width: var(--cards-max-width);
   padding: 10px 0 15px 0;
 }
 

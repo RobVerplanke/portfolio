@@ -4,16 +4,17 @@
   --card-background-color: #b5b5b5;
   --card-outline-color: #acacac;
   --card-link-color: #00ffff;
+  --cards-max-width: 600px;
 }
 
 .projects-preview-card {
   display: flex;
   flex-direction: row;
-  max-width: 500px;
+  max-width: var(--cards-max-width);
   background-color: var(--card-background-color);
   border-radius: 3px;
   margin: 30px 0 0 0;
-  padding: 30px;
+  padding: 25px 25px 15px 25px;
   outline: 2px solid var(--card-outline-color);
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.2);
 }

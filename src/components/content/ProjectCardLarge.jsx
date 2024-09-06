@@ -5,24 +5,33 @@ import jsIcon from '../../assets/icons/js-icon.png';
 import reactIcon from '../../assets/icons/react-icon.png';
 import '../../styles/ProjectCardLarge.css';
 
-export function ProjectCardLarge(props) {
+export function ProjectCardLarge({ isOpen, value }) {
   const { subTitle, description, imageMed, altText, liveLink, codeLink } =
-    props.value;
+    value;
+
   return (
     <article>
-      {/* <div>nav</div> */}
       <div className="projects-page-card">
         <div className="image-large-container">
           <img src={imageMed} alt={altText} />
         </div>
         <br />
-
-        <div className="card-large-links">
-          <a href={liveLink} target="_blank">
+        <div tabIndex="-1" aria-hidden="true" className="card-large-links">
+          <a
+            tabIndex={isOpen ? '0' : '-1'}
+            aria-hidden={isOpen ? 'false' : 'true'}
+            href={liveLink}
+            target="_blank"
+          >
             Live preview
           </a>
           <p>|</p>
-          <a href={codeLink} target="_blank">
+          <a
+            tabIndex={isOpen ? '0' : '-1'}
+            aria-hidden={isOpen ? 'false' : 'true'}
+            href={codeLink}
+            target="_blank"
+          >
             View code
           </a>
         </div>

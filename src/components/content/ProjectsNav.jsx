@@ -36,50 +36,82 @@ export default function ProjectsNav() {
 
   return (
     <main>
-      <div onClick={selectAllProjects} className="collapse-nav">
-        {allProjectsOpen ? ( // All cards are open
-          <>
-            <span>Close all&nbsp;</span>
-            <span>
-              <ArrowCircleUpIcon />
-            </span>
-          </>
-        ) : (
-          // All cards are closed
-          <>
-            <span>Open all&nbsp;</span>
-            <span>
-              <ArrowCircleDownIcon />
-            </span>
-          </>
-        )}
+      <div className="toggle-all-projects-button">
+        <div
+          aria-label="Close all cards"
+          role="button"
+          tabIndex="0"
+          onClick={selectAllProjects}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter') selectAllProjects();
+          }}
+          className="collapse-nav"
+        >
+          {allProjectsOpen ? (
+            // All cards are open
+            <>
+              <span>Close all&nbsp;</span>
+              <span>
+                <ArrowCircleUpIcon />
+              </span>
+            </>
+          ) : (
+            // All cards are closed
+            <>
+              <span>Open all&nbsp;</span>
+              <span>
+                <ArrowCircleDownIcon />
+              </span>
+            </>
+          )}
+        </div>
       </div>
       <div className="projects-card-holder">
         {allProjects.map((project) => (
           <div
+            aria-label={`Open project: ${project.title}`}
+            role="button"
+            tabIndex="0"
             key={project.id}
             className={`project-item ${
               openProjectId.includes(project.id) ? 'open' : ''
             }`}
             onClick={() => toggleProject(project.id)}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter') {
+                toggleProject(project.id);
+              }
+            }}
           >
             <h2>{project.title}</h2>
             <div className="project-big-card">
-              <ProjectCardLarge key={project.id} value={project} />
+              <ProjectCardLarge
+                key={project.id}
+                isOpen={openProjectId.includes(project.id)}
+                value={project}
+              />
             </div>
           </div>
         ))}
       </div>
-      <div onClick={selectAllProjects} className="collapse-nav">
-        {allProjectsOpen && ( // Extra 'close all' button at the bottom, only if all cards are open
-          <>
-            <span>Close all&nbsp;</span>
-            <span>
-              <ArrowCircleUpIcon />
-            </span>
-          </>
-        )}
-      </div>
+      {allProjectsOpen && ( // Extra 'close all' button at the bottom, only if all cards are open
+        <div className="toggle-all-projects-button">
+          <div
+            aria-label="Close all cards"
+            role="button"
+            tabIndex="0"
+            onClick={selectAllProjects}
+            className="collapse-nav"
+          >
+            <>
+              <span>Close all&nbsp;</span>
+              <span>
+                <ArrowCircleUpIcon />
+              </span>
+            </>
+          </div>
+        </div>
+      )}
     </main>
   );
 }
