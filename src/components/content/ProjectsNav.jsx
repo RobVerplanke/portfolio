@@ -47,8 +47,7 @@ export default function ProjectsNav() {
           }}
           className="collapse-nav"
         >
-          {allProjectsOpen ? (
-            // All cards are open
+          {allProjectsOpen ? ( // All cards are open
             <>
               <span>Close all&nbsp;</span>
               <span>
