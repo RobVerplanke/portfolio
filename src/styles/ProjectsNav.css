@@ -44,7 +44,7 @@ main:last-child {
   color: var(--font-color-dark);
   background-color: var(--card-background-color);
   border-bottom: 1px solid var(--border-color);
-  transition: background-color 0.2s ease-in-out, padding 1.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .project-item > * {

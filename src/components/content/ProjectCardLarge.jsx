@@ -18,6 +18,7 @@ export function ProjectCardLarge({ isOpen, value }) {
         <br />
         <div tabIndex="-1" aria-hidden="true" className="card-large-links">
           <a
+            className="text-nav-item"
             tabIndex={isOpen ? '0' : '-1'}
             aria-hidden={isOpen ? 'false' : 'true'}
             href={liveLink}
@@ -27,6 +28,7 @@ export function ProjectCardLarge({ isOpen, value }) {
           </a>
           <p>|</p>
           <a
+            className="text-nav-item"
             tabIndex={isOpen ? '0' : '-1'}
             aria-hidden={isOpen ? 'false' : 'true'}
             href={codeLink}

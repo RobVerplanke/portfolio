@@ -10,6 +10,7 @@
   --border-top-color: #333333;
   --button-hover-color: #636363;
   --font-color-dark: #333333;
+  --font-color-light: #dbdbdb;
   --app-background-color: #dbdbdb;
   --link-bg-color: #00ffff;
   --link-bg-color-hover: #b5b5b5;
@@ -29,7 +30,7 @@
   -moz-osx-font-smoothing: grayscale;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color: #333333;
   background-color: var(--app-background-color);
 }
 
@@ -75,13 +76,6 @@ p {
   color: var(--font-color-dark);
 }
 
-a {
-  font-size: 1.4em;
-  color: var(--font-color-dark);
-  text-decoration: none;
-  cursor: default;
-}
-
 label {
   font-size: 0.9em;
   color: var(--font-color-dark);
@@ -110,18 +104,57 @@ h4 {
   font-size: 1.1em;
 }
 
+/* Navigation elements */
+
 nav a:last-child {
   margin-left: auto;
 }
 
-.button-highlight {
-  font-size: 1.4em;
-  border: none;
+.text-nav-item {
   color: var(--font-color-dark);
-  padding: 2px 10px 2px 10px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button-nav-item {
+  font-size: 1.4em;
   border-radius: 10px;
+  padding: 2px 10px 2px 10px;
+  color: var(--font-color-dark);
+  border: none;
+  text-decoration: none;
+  cursor: default;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.button-nav-item:hover {
   background-color: var(--button-bg-color);
 }
+
+.button-nav-item-highlighted {
+  font-size: 1.4em;
+  border-radius: 10px;
+  padding: 2px 10px 2px 10px;
+  color: var(--font-color-dark);
+  border: none;
+  text-decoration: none;
+  cursor: default;
+  background-color: var(--button-bg-color);
+  transition: background-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.button-nav-item-highlighted:hover {
+  color: var(--font-color-light);
+  background-color: var(--button-hover-color);
+}
+
+.icon-nav-item {
+  color: var(--font-color-dark);
+}
+
+/* Mediaqueries */
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -136,7 +169,7 @@ nav a:last-child {
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
   h1 {
     font-size: 1.6em;
   }

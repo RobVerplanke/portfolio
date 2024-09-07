@@ -39,7 +39,7 @@ export function ProjectCardSmall(props) {
                 <>
                   {description}
                   <a
-                    className="card-description-link"
+                    className="text-nav-item"
                     onClick={resizeDescriptionContent}
                   >
                     ...Read less
@@ -49,7 +49,7 @@ export function ProjectCardSmall(props) {
                 <>
                   {truncateString(description)}
                   <a
-                    className="card-description-link"
+                    className="text-nav-item"
                     onClick={resizeDescriptionContent}
                   >
                     ...Read more
@@ -61,10 +61,10 @@ export function ProjectCardSmall(props) {
         </div>
         {/* Links container can stay separate */}
         <div className="project-links">
-          <a href={liveLink} target="_blank">
+          <a className="text-nav-item" href={liveLink} target="_blank">
             Live preview
           </a>
-          <a href={codeLink} target="_blank">
+          <a className="text-nav-item" href={codeLink} target="_blank">
             View code
           </a>
         </div>
