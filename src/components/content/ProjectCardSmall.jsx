@@ -39,7 +39,10 @@ export function ProjectCardSmall(props) {
               {isReadMoreActive ? (
                 <>
                   {description}
-                  <a onClick={resizeDescriptionContent}>
+                  <a
+                    className="text-nav-item"
+                    onClick={resizeDescriptionContent}
+                  >
                     <ArrowLeftOutlinedIcon className="icon-nav-item" />
                     Read less
                   </a>
@@ -47,7 +50,10 @@ export function ProjectCardSmall(props) {
               ) : (
                 <>
                   {truncateString(description)}
-                  <a onClick={resizeDescriptionContent}>
+                  <a
+                    className="text-nav-item"
+                    onClick={resizeDescriptionContent}
+                  >
                     <ArrowRightOutlinedIcon className="icon-nav-item" />
                     Read more
                   </a>
