@@ -28,7 +28,7 @@ export function ProjectCardSmall(props) {
         {/* Display image and text in the same container */}
         <div className="content-container">
           <div className="image-container">
-            <img src={imageSmall} alt={altText} />
+            <img src={imageSmall} alt={altText} width="183" height="183" />
           </div>
           <h4>
             {title} - {subTitle}

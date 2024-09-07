@@ -13,7 +13,7 @@ export function ProjectCardLarge({ isOpen, value }) {
     <article>
       <div className="projects-page-card">
         <div className="image-large-container">
-          <img src={imageMed} alt={altText} />
+          <img src={imageMed} alt={altText} width="428" height="382" />
         </div>
         <br />
         <div tabIndex="-1" aria-hidden="true" className="card-large-links">
