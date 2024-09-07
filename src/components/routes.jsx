@@ -1,10 +1,10 @@
-import App from './App';
-import Home from './pages/HomePage';
-import Projects from './pages/ProjectsPage';
-import About from './pages/AboutPage';
-import Contact from './pages/ContactPage';
-import Errorpage from './pages/ErrorPage';
-import ThankYouMessage from './content/ThankYouMessage';
+import App from './App.jsx';
+import Home from './pages/HomePage.jsx';
+import Projects from './pages/ProjectsPage.jsx';
+import About from './pages/AboutPage.jsx';
+import Contact from './pages/ContactPage.jsx';
+import Errorpage from './pages/ErrorPage.jsx';
+import ThankYouMessage from './content/ThankYouMessage.jsx';
 
 const routes = [
   {

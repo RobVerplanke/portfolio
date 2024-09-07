@@ -3,6 +3,7 @@ import { ProjectCardLarge } from '../content/ProjectCardLarge.jsx';
 import { useCallback, useState } from 'react';
 import ArrowCircleDownIcon from '@mui/icons-material/ArrowCircleDown';
 import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
+
 import '../../styles/ProjectsNav.css';
 
 export default function ProjectsNav() {
@@ -38,6 +39,7 @@ export default function ProjectsNav() {
     <main>
       <div className="toggle-all-projects-button">
         <div
+          className="collapse-nav"
           aria-label="Close all cards"
           role="button"
           tabIndex="0"
@@ -45,7 +47,6 @@ export default function ProjectsNav() {
           onKeyDown={(e) => {
             if (e.key === 'Enter') selectAllProjects();
           }}
-          className="collapse-nav"
         >
           {allProjectsOpen ? ( // All cards are open
             <>

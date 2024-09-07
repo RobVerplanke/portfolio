@@ -136,10 +136,6 @@ nav a:last-child {
   background-color: var(--button-hover-color);
 }
 
-.icon-nav-item {
-  color: var(--font-color-dark);
-}
-
 /* Mediaqueries */
 
 @media (prefers-color-scheme: light) {

@@ -12,15 +12,17 @@
   color: var(--font-color);
 }
 
-.contact-email,
-.contact-linkedin,
-.contact-github {
-  display: flex;
-  align-items: start;
-}
-
 .contact-icons-holder a {
   cursor: pointer;
+}
+
+.icon-nav-item {
+  color: var(--font-color-dark);
+}
+
+.contact-icon-link {
+  display: flex;
+  align-items: start;
 }
 
 .contact-info-text {

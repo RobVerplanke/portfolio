@@ -16,9 +16,10 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  width: 100px;
   cursor: pointer;
   color: var(--font-color-dark);
+  margin-bottom: 5px;
+  width: 100px;
   font-size: 0.8em;
 }
 
@@ -64,11 +65,6 @@ main:last-child {
 
 .project-item:hover {
   background-color: var(--link-bg-color);
-}
-
-.project-big-card {
-  padding-top: 5px;
-  background-color: var(--card-background-color);
 }
 
 .project-big-card {

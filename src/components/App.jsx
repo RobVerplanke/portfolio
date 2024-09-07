@@ -1,7 +1,7 @@
-import { EmptySidebar } from './pages/EmptySidebar.jsx';
 import { Outlet } from 'react-router-dom';
 import Header from './header/Header.jsx';
-import { DataProvider } from '../context/DataContext';
+import { EmptySidebar } from './pages/EmptySidebar.jsx';
+import { DataProvider } from '../context/DataContext.jsx';
 
 function App() {
   return (

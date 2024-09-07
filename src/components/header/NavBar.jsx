@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import '../../styles/NavBar.css';
+// Class .button-nav-item is styled in index.css
 
 function NavBar() {
   return (

@@ -10,7 +10,7 @@ export default function ContactPageTextContent() {
       <h2>Contact information</h2>
       <br />
       <div className="contact-icons-holder">
-        <div className="contact-email">
+        <div className="contact-icon-link">
           <a
             className="icon-nav-item"
             aria-label="Link to e-mail adres"
@@ -20,7 +20,7 @@ export default function ContactPageTextContent() {
           </a>
           <span className="contact-info-text">rverplanke@gmail.com</span>
         </div>
-        <div className="contact-linkedin">
+        <div className="contact-icon-link">
           <a
             className="icon-nav-item"
             aria-label="Link to LinkedIn"
@@ -33,7 +33,7 @@ export default function ContactPageTextContent() {
             linkedin.com/in/rob-verplanke-jr
           </span>
         </div>
-        <div className="contact-github">
+        <div className="contact-icon-link">
           <a
             className="icon-nav-item"
             aria-label="Link to Github"

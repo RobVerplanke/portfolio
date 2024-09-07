@@ -7,12 +7,12 @@ function Home() {
   return (
     <main>
       {/* Display title and introduction text */}
-      <div className="text-content-holder">
+      <div>
         <HomePageTextContent />
       </div>
 
       {/* Display 'Project selection' content */}
-      <div className="projects-selection-holder">
+      <div>
         <ProjectSelection />
       </div>
     </main>

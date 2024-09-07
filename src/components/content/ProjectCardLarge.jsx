@@ -3,6 +3,7 @@ import htmlIcon from '../../assets/icons/html-icon.png';
 import csslIcon from '../../assets/icons/css-icon.png';
 import jsIcon from '../../assets/icons/js-icon.png';
 import reactIcon from '../../assets/icons/react-icon.png';
+
 import '../../styles/ProjectCardLarge.css';
 
 export function ProjectCardLarge({ isOpen, value }) {

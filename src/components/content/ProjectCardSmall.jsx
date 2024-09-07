@@ -1,9 +1,8 @@
 /* eslint-disable react/prop-types */
 import { useState } from 'react';
 import truncateString from '../../utils/helperFunctions.jsx';
-import '../../styles/ProjectCardSmall.css';
 
-// Maximum length of the description in the small card component
+import '../../styles/ProjectCardSmall.css';
 
 export function ProjectCardSmall(props) {
   const {

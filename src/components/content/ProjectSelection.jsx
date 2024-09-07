@@ -1,5 +1,6 @@
 import { ProjectCardSmall } from './ProjectCardSmall.jsx';
 import { useData } from '../../context/DataContext.jsx';
+
 import '../../styles/ProjectSelection.css';
 
 // Get selection of projects and create a card for each of them
