@@ -41,6 +41,7 @@ body {
 }
 
 header {
+  padding-top: 10px;
   display: flex;
   background-color: var(--app-background-color);
   border-top: 25px solid var(--border-top-color);
@@ -152,6 +153,9 @@ nav a:last-child {
 }
 
 @media (max-width: 1400px) {
+  header {
+    padding-top: 27px;
+  }
   h1 {
     font-size: 1.6em;
   }

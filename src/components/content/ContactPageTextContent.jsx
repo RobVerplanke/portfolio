@@ -1,6 +1,7 @@
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import CONTACT_EMAIL_ADRES from '../../lib/constants.js';
 
 import '../../styles/ContactTextContent.css';
 
@@ -14,7 +15,7 @@ export default function ContactPageTextContent() {
           <a
             className="icon-nav-item"
             aria-label="Link to e-mail adres"
-            href="http://"
+            href={'mailto:' + CONTACT_EMAIL_ADRES}
           >
             <AlternateEmailIcon />
           </a>
