@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
+import { useState } from 'react';
 import truncateString from '../../utils/helperFunctions.jsx';
 import '../../styles/ProjectCardSmall.css';
 
 // Maximum length of the description in the small card component
-const DESCRIPTION_MAX_LENGTH = 180;
 
 export function ProjectCardSmall(props) {
   const {
@@ -15,6 +15,13 @@ export function ProjectCardSmall(props) {
     liveLink,
     codeLink,
   } = props.value;
+
+  const [isReadMoreActive, setIsReadMoreActive] = useState(false);
+
+  function resizeDescriptionContent() {
+    setIsReadMoreActive(!isReadMoreActive);
+  }
+
   return (
     <article>
       <div className="projects-preview-card">
@@ -29,7 +36,29 @@ export function ProjectCardSmall(props) {
             </h4>
           </div>
           <div className="card-description">
-            <p>{truncateString(description, DESCRIPTION_MAX_LENGTH)}</p>
+            <p>
+              {isReadMoreActive ? (
+                <>
+                  {description}
+                  <a
+                    className="card-description-content"
+                    onClick={resizeDescriptionContent}
+                  >
+                    ...Read less
+                  </a>
+                </>
+              ) : (
+                <>
+                  {truncateString(description)}
+                  <a
+                    className="card-description-content"
+                    onClick={resizeDescriptionContent}
+                  >
+                    ...Read more
+                  </a>
+                </>
+              )}
+            </p>
           </div>
         </div>
         {/* Links container can stay separate */}
