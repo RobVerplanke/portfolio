@@ -51,17 +51,13 @@ export default function ProjectsNav() {
           {allProjectsOpen ? ( // All cards are open
             <>
               <span>Close all&nbsp;</span>
-              <span className="text-nav-item">
-                <ArrowDropUpOutlinedIcon />
-              </span>
+              <ArrowDropUpOutlinedIcon className="icon-nav-item" />
             </>
           ) : (
             // All cards are closed
             <>
               <span>Open all&nbsp;</span>
-              <span className="text-nav-item">
-                <ArrowDropDownOutlinedIcon />
-              </span>
+              <ArrowDropDownOutlinedIcon className="icon-nav-item" />
             </>
           )}
         </div>
@@ -105,9 +101,7 @@ export default function ProjectsNav() {
           >
             <>
               <span>Close all&nbsp;</span>
-              <span>
-                <ArrowDropUpOutlinedIcon />
-              </span>
+              <ArrowDropUpOutlinedIcon className="icon-nav-item" />
             </>
           </div>
         </div>

@@ -7,15 +7,14 @@
 
 /* Custom properties */
 :root {
+  --app-background-color: #dbdbdb;
   --border-top-color: #333333;
-  --button-hover-color: #636363;
   --font-color-dark: #333333;
   --font-color-light: #dbdbdb;
-  --app-background-color: #dbdbdb;
   --link-bg-color: #00ffff;
   --link-bg-color-hover: #b5b5b5;
   --button-bg-color: #00ffff;
-  --button-bg-color-hover: #777777;
+  --button-hover-color: #8b8b8b;
 
   /* Global properties */
   font-family: 'Montserrat', sans-serif;
@@ -134,11 +133,10 @@ nav a:last-child {
 
 .button-nav-item-highlighted {
   background-color: var(--button-bg-color);
-  transition: color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .button-nav-item-highlighted:hover {
-  color: var(--font-color-light);
   background-color: var(--button-hover-color);
 }
 
