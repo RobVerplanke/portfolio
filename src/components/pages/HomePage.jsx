@@ -9,8 +9,10 @@ function Home() {
       {/* Display title and introduction text */}
       <div>
         <HomePageTextContent />
+        <br />
+        <br />
+        <br />
       </div>
-
       {/* Display 'Project selection' content */}
       <div>
         <ProjectSelection />
