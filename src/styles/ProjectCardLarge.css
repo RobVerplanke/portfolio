@@ -15,6 +15,7 @@
   background-color: var(--app-background-color);
   border-left: 1px solid var(--card-border-color);
   border-right: 1px solid var(--card-border-color);
+  border-bottom: 1px solid var(--card-border-color);
   max-width: var(--cards-max-width);
   padding: 10px 0 15px 0;
 }
@@ -71,11 +72,12 @@
 
 @media (max-width: 600px) {
   .projects-page-card {
-    width: 320px;
+    width: 280px;
   }
 
   .image-large-container img {
-    width: 260px;
+    max-width: 220px;
+    max-height: 220px;
   }
 
   .card-large-description {
