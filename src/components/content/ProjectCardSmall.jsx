@@ -30,18 +30,16 @@ export function ProjectCardSmall(props) {
           <div className="image-container">
             <img src={imageSmall} alt={altText} />
           </div>
-          <div className="card-description">
-            <h4>
-              {title} - {subTitle}
-            </h4>
-          </div>
+          <h4>
+            {title} - {subTitle}
+          </h4>
           <div className="card-description">
             <p>
               {isReadMoreActive ? (
                 <>
                   {description}
                   <a
-                    className="card-description-content"
+                    className="card-description-link"
                     onClick={resizeDescriptionContent}
                   >
                     ...Read less
@@ -51,7 +49,7 @@ export function ProjectCardSmall(props) {
                 <>
                   {truncateString(description)}
                   <a
-                    className="card-description-content"
+                    className="card-description-link"
                     onClick={resizeDescriptionContent}
                   >
                     ...Read more

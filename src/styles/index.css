@@ -136,7 +136,13 @@ nav a:last-child {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1300px) {
+  h1 {
+    font-size: 1.6em;
+  }
+}
+
+@media (max-width: 1000px) {
   main {
     justify-content: center;
     align-items: center;
@@ -161,27 +167,5 @@ nav a:last-child {
 
   nav a:last-child {
     margin-left: 0;
-  }
-}
-
-@media (max-width: 820px) {
-  main {
-    justify-content: center;
-    align-items: center;
-  }
-  header {
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .main-sidebar {
-    padding: 0 10px 0 10px;
-    flex: 0;
-  }
-}
-
-@media (max-width: 1300px) {
-  h1 {
-    font-size: 1.6em;
   }
 }
