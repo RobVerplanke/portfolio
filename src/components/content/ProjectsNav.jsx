@@ -1,8 +1,8 @@
 import { useData } from '../../context/DataContext.jsx';
 import { ProjectCardLarge } from '../content/ProjectCardLarge.jsx';
 import { useCallback, useState } from 'react';
-import ArrowCircleDownIcon from '@mui/icons-material/ArrowCircleDown';
-import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
+import ArrowDropDownOutlinedIcon from '@mui/icons-material/ArrowDropDownOutlined';
+import ArrowDropUpOutlinedIcon from '@mui/icons-material/ArrowDropUpOutlined';
 
 import '../../styles/ProjectsNav.css';
 
@@ -51,16 +51,16 @@ export default function ProjectsNav() {
           {allProjectsOpen ? ( // All cards are open
             <>
               <span>Close all&nbsp;</span>
-              <span>
-                <ArrowCircleUpIcon />
+              <span className="text-nav-item">
+                <ArrowDropUpOutlinedIcon />
               </span>
             </>
           ) : (
             // All cards are closed
             <>
               <span>Open all&nbsp;</span>
-              <span>
-                <ArrowCircleDownIcon />
+              <span className="text-nav-item">
+                <ArrowDropDownOutlinedIcon />
               </span>
             </>
           )}
@@ -106,7 +106,7 @@ export default function ProjectsNav() {
             <>
               <span>Close all&nbsp;</span>
               <span>
-                <ArrowCircleUpIcon />
+                <ArrowDropUpOutlinedIcon />
               </span>
             </>
           </div>

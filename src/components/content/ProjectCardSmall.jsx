@@ -1,6 +1,8 @@
 /* eslint-disable react/prop-types */
 import { useState } from 'react';
 import truncateString from '../../utils/helperFunctions.jsx';
+import ArrowRightOutlinedIcon from '@mui/icons-material/ArrowRightOutlined';
+import ArrowLeftOutlinedIcon from '@mui/icons-material/ArrowLeftOutlined';
 
 import '../../styles/ProjectCardSmall.css';
 
@@ -41,7 +43,8 @@ export function ProjectCardSmall(props) {
                     className="text-nav-item"
                     onClick={resizeDescriptionContent}
                   >
-                    ...Read less
+                    <ArrowLeftOutlinedIcon />
+                    Read less
                   </a>
                 </>
               ) : (
@@ -51,7 +54,8 @@ export function ProjectCardSmall(props) {
                     className="text-nav-item"
                     onClick={resizeDescriptionContent}
                   >
-                    ...Read more
+                    <ArrowRightOutlinedIcon />
+                    Read more
                   </a>
                 </>
               )}
