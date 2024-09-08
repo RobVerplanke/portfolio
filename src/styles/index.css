@@ -14,7 +14,8 @@
   --link-bg-color: #00ffff;
   --link-bg-color-hover: #b5b5b5;
   --button-bg-color: #00ffff;
-  --button-hover-color: #8b8b8b;
+  --button-hover-color: #dbdbdb;
+  --button-hover-border-color: #858585;
 
   /* Global properties */
   font-family: 'Montserrat', sans-serif;
@@ -128,19 +129,50 @@ nav a:last-child {
   border: none;
   text-decoration: none;
   cursor: default;
-  transition: background-color 0.2s ease-in-out;
+}
+
+.button-nav-item {
+  outline: 1px solid var(--app-background-color);
+  transition: outline 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 .button-nav-item:hover {
   background-color: var(--button-bg-color);
+  outline: 1px solid var(--button-hover-border-color);
+}
+
+.button-nav-item:active {
+  scale: 0.95;
+}
+
+.button-nav-item-selected {
+  transition: background-color 0.2s ease-in-out;
+  outline: 1px solid var(--button-hover-border-color);
+}
+
+.button-nav-item-selected:hover {
+  background-color: var(--app-background-color);
+  transition: background-color 0.2s ease-in-out;
 }
 
 .button-nav-item-highlighted {
   background-color: var(--button-bg-color);
-  transition: background-color 0.2s ease-in-out;
+  outline: 1px solid var(--button-bg-color);
+  transition: outline 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 .button-nav-item-highlighted:hover {
+  outline: 1px solid var(--button-hover-border-color);
+  background-color: var(--button-hover-color);
+}
+
+.button-nav-item-highlighted:active {
+  scale: 0.95;
+  background-color: var(--app-background-color);
+}
+
+.button-nav-item-highlighted-selected {
+  outline: 1px solid var(--button-hover-border-color);
   background-color: var(--button-hover-color);
 }
 
@@ -188,7 +220,7 @@ nav a:last-child {
     padding-top: 10px;
     flex-direction: column;
     align-items: center;
-    gap: 0px;
+    gap: 5px;
   }
 
   nav a:last-child {

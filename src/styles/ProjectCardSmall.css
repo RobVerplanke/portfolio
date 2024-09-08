@@ -36,6 +36,7 @@
 }
 
 .card-description {
+  padding-top: 10px;
   font-size: 0.8em;
 }
 
@@ -48,9 +49,5 @@
   .projects-preview-card {
     flex-direction: column;
     justify-content: flex-start;
-  }
-
-  .image-container {
-    justify-content: center;
   }
 }

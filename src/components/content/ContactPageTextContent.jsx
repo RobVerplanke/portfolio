@@ -13,22 +13,20 @@ export default function ContactPageTextContent() {
       <div className="contact-icons-holder">
         <div className="contact-icon-link">
           <a
-            className="icon-nav-item"
             aria-label="Link to e-mail adres"
             href={'mailto:' + CONTACT_EMAIL_ADRES}
           >
-            <AlternateEmailIcon />
+            <AlternateEmailIcon className="icon-nav-item" />
           </a>
           <span className="contact-info-text">rverplanke@gmail.com</span>
         </div>
         <div className="contact-icon-link">
           <a
-            className="icon-nav-item"
             aria-label="Link to LinkedIn"
             target="_blank"
             href="http://www.linkedin.com/in/rob-verplanke-jr"
           >
-            <LinkedInIcon />
+            <LinkedInIcon className="icon-nav-item" />
           </a>
           <span className="contact-info-text">
             linkedin.com/in/rob-verplanke-jr
@@ -36,12 +34,11 @@ export default function ContactPageTextContent() {
         </div>
         <div className="contact-icon-link">
           <a
-            className="icon-nav-item"
             aria-label="Link to Github"
             target="_blank"
             href="http://www.github.com/RobVerplanke"
           >
-            <GitHubIcon />
+            <GitHubIcon className="icon-nav-item" />
           </a>
           <span className="contact-info-text">github.com/RobVerplanke</span>
         </div>

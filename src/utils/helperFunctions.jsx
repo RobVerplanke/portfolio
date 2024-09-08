@@ -21,5 +21,5 @@ export default function truncateString(string, maxLength) {
   }
 
   // Substract the last space, dot or comma from the sentence and add a 'Read more' link
-  return <>{truncatedString.slice(0, truncatedString.length - 1)}</>;
+  return <>{truncatedString.slice(0, truncatedString.length - 1) + '...'}</>;
 }

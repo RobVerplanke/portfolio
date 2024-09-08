@@ -10,13 +10,16 @@ const DataContext = createContext();
 
 export function DataProvider({ children }) {
   // Provide project data to components that need to display project cards
+  const [activePage, setActivePage] = useState({ title: 'home' });
   const [allProjects, setAllProjects] = useState(getAllProjectsData());
   const [selectedProjects, setSelectedProjects] = useState(
     getSelectedProjectsData()
   );
 
   return (
-    <DataContext.Provider value={{ selectedProjects, allProjects }}>
+    <DataContext.Provider
+      value={{ activePage, setActivePage, selectedProjects, allProjects }}
+    >
       {children}
     </DataContext.Provider>
   );

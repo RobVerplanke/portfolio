@@ -6,14 +6,14 @@ import { DataProvider } from '../context/DataContext.jsx';
 function App() {
   return (
     <div className="page-container">
-      <Header />
-      <div className="content-wrapper">
-        <EmptySidebar />
-        <DataProvider>
+      <DataProvider>
+        <Header />
+        <div className="content-wrapper">
+          <EmptySidebar />
           <Outlet />
-        </DataProvider>
-        <EmptySidebar />
-      </div>
+          <EmptySidebar />
+        </div>
+      </DataProvider>
     </div>
   );
 }

@@ -3,10 +3,10 @@
   --font-color: #050505;
 }
 
-.contact-icons-holder span {
+.contact-icons-holder {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 5px;
 
   font-size: 1em;
   color: var(--font-color);
