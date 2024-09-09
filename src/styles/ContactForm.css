@@ -1,23 +1,25 @@
 /* Custom properties */
 
 :root {
+  --form-background-gradient: linear-gradient(330deg, #a1a1a1 10%, #b3b3b3 90%);
   --card-background-color: #b5b5b5;
-  --card-outline-color: #acacac;
-  --card-link-color: #00ffff;
+  --form-outline-color: #acacac;
+  --card-outline-color: #a3a3a3;
   --input-background-color: #ffffff;
   --font-color-dark: #050505;
   --cards-max-width: 520px;
 }
 
 .form-holder {
-  background-color: var(--card-background-color);
-  border-radius: 3px;
+  /* background-color: var(--card-background-color); */
+  border-radius: 15px;
   min-width: 300px;
   max-width: var(--cards-max-width);
   margin: 60px 0 30px 0;
   padding: 10px 10px 10px 10px;
-  outline: 2px solid var(--card-outline-color);
-  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.2);
+  outline: 1px solid var(--form-outline-color);
+  box-shadow: 2px 4px 3px rgba(49, 49, 49, 0.5);
+  background-image: var(--form-background-gradient);
 }
 
 form {
