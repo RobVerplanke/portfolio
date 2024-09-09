@@ -53,6 +53,7 @@ export default function ContactForm() {
             type="text"
             id="subject"
             name="subject"
+            aria-label="subject"
             placeholder="Subject..."
           />
           <br />
@@ -62,6 +63,7 @@ export default function ContactForm() {
           <textarea
             id="message"
             name="message"
+            aria-label="message"
             placeholder="Your message..."
           ></textarea>
           <br />

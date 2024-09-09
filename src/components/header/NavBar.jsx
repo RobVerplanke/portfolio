@@ -14,6 +14,7 @@ function NavBar() {
     <nav>
       {/* .button-nav-item class is styled in index.css */}
       <Link
+        aria-label="Go to Homepage"
         className={`${
           activePage.title === 'home'
             ? 'button-nav-item button-nav-item-selected'
@@ -25,6 +26,7 @@ function NavBar() {
         Home
       </Link>
       <Link
+        aria-label="Go to About-me page"
         className={`${
           activePage.title === 'about'
             ? 'button-nav-item button-nav-item-selected'
@@ -36,6 +38,7 @@ function NavBar() {
         About
       </Link>
       <Link
+        aria-label="Go to Projectspage"
         className={`${
           activePage.title === 'projects'
             ? 'button-nav-item button-nav-item-selected'
@@ -47,6 +50,7 @@ function NavBar() {
         Projects
       </Link>
       <Link
+        aria-label="Go to Contactpage"
         className={`${
           activePage.title === 'contact'
             ? 'button-nav-item-highlighted button-nav-item-highlighted-selected'

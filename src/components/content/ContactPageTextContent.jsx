@@ -22,7 +22,7 @@ export default function ContactPageTextContent() {
         </div>
         <div className="contact-icon-link">
           <a
-            aria-label="Link to LinkedIn"
+            aria-label="Link to LinkedIn page"
             target="_blank"
             href="http://www.linkedin.com/in/rob-verplanke-jr"
           >
