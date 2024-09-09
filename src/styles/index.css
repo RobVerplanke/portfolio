@@ -132,13 +132,13 @@ nav a:last-child {
 }
 
 .button-nav-item {
-  outline: 1px solid var(--app-background-color);
-  transition: outline 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  border: 1px solid transparent;
+  transition: border 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 .button-nav-item:hover {
   background-color: var(--button-bg-color);
-  outline: 1px solid var(--button-hover-border-color);
+  border: 1px solid var(--button-hover-border-color);
 }
 
 .button-nav-item:active {
@@ -147,7 +147,7 @@ nav a:last-child {
 
 .button-nav-item-selected {
   transition: background-color 0.2s ease-in-out;
-  outline: 1px solid var(--button-hover-border-color);
+  border: 1px solid var(--button-hover-border-color);
 }
 
 .button-nav-item-selected:hover {
@@ -157,12 +157,12 @@ nav a:last-child {
 
 .button-nav-item-highlighted {
   background-color: var(--button-bg-color);
-  outline: 1px solid var(--button-bg-color);
-  transition: outline 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  border: 1px solid var(--button-bg-color);
+  transition: border 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 .button-nav-item-highlighted:hover {
-  outline: 1px solid var(--button-hover-border-color);
+  border: 1px solid var(--button-hover-border-color);
   background-color: var(--button-hover-color);
 }
 
@@ -172,7 +172,7 @@ nav a:last-child {
 }
 
 .button-nav-item-highlighted-selected {
-  outline: 1px solid var(--button-hover-border-color);
+  border: 1px solid var(--button-hover-border-color);
   background-color: var(--button-hover-color);
 }
 
