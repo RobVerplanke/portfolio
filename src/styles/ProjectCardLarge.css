@@ -2,9 +2,7 @@
 
 :root {
   --app-background-color: #dbdbdb;
-  --card-background-color: #b5b5b5;
   --card-border-color: #b5b5b5;
-  --card-link-color: #00ffff;
   --cards-max-width: 600px;
 }
 

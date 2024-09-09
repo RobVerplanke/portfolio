@@ -11,6 +11,7 @@ export default function ContactPageTextContent() {
       <h2>Contact information</h2>
       <br />
       <div className="contact-icons-holder">
+        {/* Email icon and textual adress */}
         <div className="contact-icon-link">
           <a
             aria-label="Link to e-mail adres"
@@ -20,6 +21,8 @@ export default function ContactPageTextContent() {
           </a>
           <span className="contact-info-text">rverplanke@gmail.com</span>
         </div>
+
+        {/* Contact icon and textual adress */}
         <div className="contact-icon-link">
           <a
             aria-label="Link to LinkedIn page"
@@ -32,6 +35,8 @@ export default function ContactPageTextContent() {
             linkedin.com/in/rob-verplanke-jr
           </span>
         </div>
+
+        {/* Github icon and textual adress */}
         <div className="contact-icon-link">
           <a
             aria-label="Link to Github"

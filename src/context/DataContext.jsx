@@ -8,8 +8,8 @@ import getSelectedProjectsData from '../data/getSelectedProjects.js';
 
 const DataContext = createContext();
 
+// Provide project data to components that need to display project cards
 export function DataProvider({ children }) {
-  // Provide project data to components that need to display project cards
   const [activePage, setActivePage] = useState({ title: 'home' });
   const [allProjects, setAllProjects] = useState(getAllProjectsData());
   const [selectedProjects, setSelectedProjects] = useState(
@@ -25,6 +25,7 @@ export function DataProvider({ children }) {
   );
 }
 
+// Used for easy acces to the data
 export function useData() {
   return useContext(DataContext);
 }

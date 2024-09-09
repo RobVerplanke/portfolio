@@ -13,11 +13,13 @@ export function ProjectCardLarge({ isOpen, value }) {
   return (
     <article>
       <div className="projects-page-card">
+        {/* Image of the project */}
         <div className="image-large-container">
           <img src={imageMed} alt={altText} width="428" height="382" />
         </div>
         <br />
         <div tabIndex="-1" aria-hidden="true" className="card-large-links">
+          {/* Link to live website */}
           <a
             className="text-nav-item"
             tabIndex={isOpen ? '0' : '-1'}
@@ -25,9 +27,11 @@ export function ProjectCardLarge({ isOpen, value }) {
             href={liveLink}
             target="_blank"
           >
-            Live preview
+            Live version
           </a>
           <p>|</p>
+
+          {/* Link to code on Github */}
           <a
             className="text-nav-item"
             tabIndex={isOpen ? '0' : '-1'}
@@ -40,6 +44,7 @@ export function ProjectCardLarge({ isOpen, value }) {
         </div>
         <br />
 
+        {/* Textual information */}
         <div className="card-large-subtitle">
           <p>{subTitle}</p>
         </div>
@@ -48,6 +53,7 @@ export function ProjectCardLarge({ isOpen, value }) {
         </div>
         <br />
 
+        {/* Icons of used techniques */}
         <div className="card-large-skills">
           <img src={htmlIcon} alt="HTML-5 icon" />
           <img src={csslIcon} alt="CSS-3 icon" />

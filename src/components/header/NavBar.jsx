@@ -1,18 +1,18 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-// import { useEffect } from 'react';
 import { useData } from '../../context/DataContext.jsx';
 import { Link } from 'react-router-dom';
+import '../../styles/header/NavBar.css';
 
 function NavBar() {
   const { activePage, setActivePage } = useData();
 
+  // Set the page that's currently active
   function handleClick(page) {
     setActivePage((prevVal) => ({ ...prevVal, title: page.title }));
   }
 
   return (
     <nav>
-      {/* .button-nav-item class is styled in index.css */}
+      {/* Home Page */}
       <Link
         aria-label="Go to Homepage"
         className={`${
@@ -25,6 +25,8 @@ function NavBar() {
       >
         Home
       </Link>
+
+      {/* About Page */}
       <Link
         aria-label="Go to About-me page"
         className={`${
@@ -37,6 +39,8 @@ function NavBar() {
       >
         About
       </Link>
+
+      {/* Projects Page */}
       <Link
         aria-label="Go to Projectspage"
         className={`${
@@ -49,6 +53,8 @@ function NavBar() {
       >
         Projects
       </Link>
+
+      {/* Contact Page */}
       <Link
         aria-label="Go to Contactpage"
         className={`${

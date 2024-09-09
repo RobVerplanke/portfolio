@@ -1,8 +1,6 @@
 import { HomePageTextContent } from '../content/HomePageTextContent.jsx';
 import { ProjectSelection } from '../content/ProjectSelection.jsx';
 
-import '../../styles/HomePage.css';
-
 function Home() {
   return (
     <main>

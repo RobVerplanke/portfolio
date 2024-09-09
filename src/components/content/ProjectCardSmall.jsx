@@ -17,6 +17,7 @@ export function ProjectCardSmall(props) {
     codeLink,
   } = props.value;
 
+  // Needed to decide if the full description or a shortened version is displayed
   const [isReadMoreActive, setIsReadMoreActive] = useState(false);
 
   function resizeDescriptionContent() {
@@ -26,19 +27,22 @@ export function ProjectCardSmall(props) {
   return (
     <article>
       <div className="projects-preview-card">
-        {/* Display image and text in the same container */}
         <div className="content-container">
+          {/* Image container */}
           <div className="image-container">
             <img src={imageSmall} alt={altText} width="183" height="183" />
           </div>
           <h4>
             {title} - {subTitle}
           </h4>
+
+          {/* Project description area */}
           <div className="card-description">
             <p>
               {isReadMoreActive ? (
                 <>
                   {description}
+                  {/* Add a read more/less button at the end of a description text */}
                   <a
                     className="text-nav-item"
                     onClick={resizeDescriptionContent}
@@ -62,10 +66,10 @@ export function ProjectCardSmall(props) {
             </p>
           </div>
         </div>
-        {/* Links container can stay separate */}
+        {/* Link for live preview and code */}
         <div className="project-links">
           <a className="text-nav-item" href={liveLink} target="_blank">
-            Live preview
+            Live version
           </a>
           <a className="text-nav-item" href={codeLink} target="_blank">
             View code

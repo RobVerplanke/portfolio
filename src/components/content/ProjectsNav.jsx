@@ -32,12 +32,13 @@ export default function ProjectsNav() {
     }
   }, [allProjects, openProjectId]);
 
-  // Keep track of open/close state (without useState) of all cards to decide which nav butttons (open/close all) to render
+  // Keep track of open/close cards (without useState) to decide which butttons (open all/close all) to render
   const allProjectsOpen = openProjectId.length >= allProjects.length;
 
   return (
     <main>
       <div className="toggle-all-projects-button">
+        {/* Display a button that opens or closes al cards */}
         <div
           className="collapse-nav"
           aria-label="Close all cards"
@@ -79,6 +80,7 @@ export default function ProjectsNav() {
               }
             }}
           >
+            {/* For each project, display the title and the corresponding card beneath it */}
             <h2>{project.title}</h2>
             <div className="project-big-card">
               <ProjectCardLarge
@@ -90,7 +92,8 @@ export default function ProjectsNav() {
           </div>
         ))}
       </div>
-      {allProjectsOpen && ( // Extra 'close all' button at the bottom, only if all cards are open
+      {/* Extra 'close all' button at the bottom when all cards are open */}
+      {allProjectsOpen && (
         <div className="toggle-all-projects-button">
           <div
             aria-label="Close all cards"

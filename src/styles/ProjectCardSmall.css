@@ -1,9 +1,8 @@
 /* Custom properties */
 
 :root {
-  --card-background-gradient: linear-gradient(330deg, #a1a1a1 10%, #c5c5c5 90%);
+  --card-background-gradient: linear-gradient(330deg, #a1a1a1 10%, #bdbdbd 90%);
   --card-outline-color: #a3a3a3;
-  --card-link-color: #00ffff;
   --card-links-border-color: #868686;
   --cards-max-width: 600px;
 }
@@ -44,6 +43,11 @@
 .icon-nav-item {
   font-size: 1.8em;
   vertical-align: middle;
+}
+
+.text-nav-item svg,
+.collapse-nav svg {
+  color: var(--button-bg-color);
 }
 
 @media (max-width: 1000px) {

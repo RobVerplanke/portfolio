@@ -1,7 +1,7 @@
 import HeaderLogo from '../header/HeaderLogo.jsx';
 import NavBar from './NavBar.jsx';
 
-import '../../styles/Header.css';
+import '../../styles/header/Header.css';
 
 function Header() {
   return (

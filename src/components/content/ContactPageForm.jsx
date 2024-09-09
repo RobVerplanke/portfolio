@@ -6,6 +6,7 @@ import '../../styles/ContactForm.css';
 export default function ContactForm() {
   const navigate = useNavigate();
 
+  // Set up sending direct message data to Netlify notification box
   function encode(data) {
     return Object.keys(data)
       .map(
@@ -14,6 +15,7 @@ export default function ContactForm() {
       .join('&');
   }
 
+  // Send form data to root of app where it gets handled by Netlify
   const handleSubmit = (event) => {
     event.preventDefault();
 

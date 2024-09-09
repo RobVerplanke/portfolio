@@ -2,16 +2,13 @@
 
 :root {
   --form-background-gradient: linear-gradient(330deg, #a1a1a1 10%, #b3b3b3 90%);
-  --card-background-color: #b5b5b5;
   --form-outline-color: #acacac;
-  --card-outline-color: #a3a3a3;
   --input-background-color: #ffffff;
   --font-color-dark: #050505;
   --cards-max-width: 520px;
 }
 
 .form-holder {
-  /* background-color: var(--card-background-color); */
   border-radius: 15px;
   min-width: 300px;
   max-width: var(--cards-max-width);
