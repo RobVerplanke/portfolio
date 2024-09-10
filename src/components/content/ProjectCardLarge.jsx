@@ -13,6 +13,10 @@ export function ProjectCardLarge({ isOpen, value }) {
   return (
     <article>
       <div className="projects-page-card">
+        {/* Subtitle of the project */}
+        <div className="card-large-subtitle">
+          <p>{subTitle}</p>
+        </div>
         {/* Image of the project */}
         <div className="image-large-container">
           <img src={imageMed} alt={altText} width="428" height="382" />
@@ -44,10 +48,8 @@ export function ProjectCardLarge({ isOpen, value }) {
         </div>
         <br />
 
-        {/* Textual information */}
-        <div className="card-large-subtitle">
-          <p>{subTitle}</p>
-        </div>
+        {/* Description of the project */}
+
         <div className="card-large-description">
           <p>{description}</p>
         </div>

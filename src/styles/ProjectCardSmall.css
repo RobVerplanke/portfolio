@@ -1,7 +1,7 @@
 /* Custom properties */
 
 :root {
-  --card-background-gradient: linear-gradient(330deg, #a1a1a1 10%, #bdbdbd 90%);
+  --card-background-gradient: linear-gradient(330deg, #a1a1a1 10%, #b4b4b4 90%);
   --card-outline-color: #a3a3a3;
   --card-links-border-color: #868686;
   --font-color-dark: #333333;

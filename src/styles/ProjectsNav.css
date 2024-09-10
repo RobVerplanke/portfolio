@@ -2,6 +2,8 @@
 :root {
   --border-color: #727272;
   --font-color-dark: #333333;
+  --font-color-grey: #636363;
+  --accordion-hover-font-color: #333333;
   --card-background-color: #b1b1b1;
   --card-active-color: #00f7ff;
   --border-radius: 0px;
@@ -64,9 +66,9 @@ main:last-child {
   align-items: center;
   width: 100%;
   cursor: default;
-  color: var(--font-color-dark);
+  color: var(--font-color-grey);
   background-color: var(--card-background-color);
-  transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
 .menu-item.open .project-big-card {
@@ -80,6 +82,7 @@ main:last-child {
 
 .menu-item:hover {
   background-color: var(--card-active-color);
+  color: var(--accordion-hover-font-color);
 }
 
 .item-title-container {
@@ -98,6 +101,7 @@ main:last-child {
 
 .item-title.open {
   background-color: var(--card-active-color);
+  color: var(--accordion-hover-font-color);
 }
 
 .item-title-arrow svg {
