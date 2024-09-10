@@ -56,12 +56,10 @@
 
 .button-nav-item-highlighted:hover {
   border: 1px solid var(--button-hover-border-color);
-  background-color: var(--button-hover-color);
 }
 
 .button-nav-item-highlighted:active {
   scale: 0.95;
-  background-color: var(--app-background-color);
 }
 
 .button-nav-item-highlighted-selected {

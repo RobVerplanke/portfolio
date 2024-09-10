@@ -3,12 +3,16 @@ import { ProjectCardLarge } from '../content/ProjectCardLarge.jsx';
 import { useCallback, useState } from 'react';
 import ArrowDropDownOutlinedIcon from '@mui/icons-material/ArrowDropDownOutlined';
 import ArrowDropUpOutlinedIcon from '@mui/icons-material/ArrowDropUpOutlined';
+import ArrowRightOutlinedIcon from '@mui/icons-material/ArrowRightOutlined';
 
 import '../../styles/ProjectsNav.css';
 
 export default function ProjectsNav() {
   const { allProjects } = useData();
   const [openProjectId, setOpenProjectId] = useState([]);
+
+  // Keep track of open/close cards (without useState) to decide which butttons (open all/close all) to render
+  const allProjectsOpen = openProjectId.length >= allProjects.length;
 
   // Toggle between open or closing the item card
   const toggleProject = useCallback((id) => {
@@ -31,9 +35,6 @@ export default function ProjectsNav() {
       setOpenProjectId(allIds); // Open all cards
     }
   }, [allProjects, openProjectId]);
-
-  // Keep track of open/close cards (without useState) to decide which butttons (open all/close all) to render
-  const allProjectsOpen = openProjectId.length >= allProjects.length;
 
   return (
     <main>
@@ -117,22 +118,32 @@ export default function ProjectsNav() {
         ))}
       </div>
       {/* Extra 'close all' button at the bottom when all cards are open */}
-      {allProjectsOpen && (
-        <div className="toggle-all-projects-button">
-          <div
-            aria-label="Close all cards"
-            role="button"
-            tabIndex="0"
-            onClick={selectAllProjects}
-            className="collapse-nav"
-          >
-            <>
-              <span>Close all&nbsp;</span>
-              <ArrowDropUpOutlinedIcon className="icon-nav-item" />
-            </>
+      <div className="bottom-nav-buttons">
+        {openProjectId.length ? (
+          <div className="button-to-top">
+            <ArrowRightOutlinedIcon />
+            <a href="#">Back to top</a>
           </div>
-        </div>
-      )}
+        ) : (
+          ''
+        )}
+        {allProjectsOpen && (
+          <div className="toggle-all-projects-button">
+            <div
+              aria-label="Close all cards"
+              role="button"
+              tabIndex="0"
+              onClick={selectAllProjects}
+              className="collapse-nav"
+            >
+              <>
+                <span>Close all&nbsp;</span>
+                <ArrowDropUpOutlinedIcon className="icon-nav-item" />
+              </>
+            </div>
+          </div>
+        )}
+      </div>
     </main>
   );
 }

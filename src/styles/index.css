@@ -98,7 +98,13 @@ h4 {
 /* Navigation elements */
 
 a {
+  text-decoration: none;
+  color: var(--font-color-dark);
   cursor: pointer;
+}
+a:visited {
+  text-decoration: none;
+  color: var(--font-color-dark);
 }
 
 nav a:last-child {
