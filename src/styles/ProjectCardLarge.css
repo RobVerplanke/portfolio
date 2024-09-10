@@ -68,7 +68,7 @@
 
 @media (max-width: 600px) {
   .projects-page-card {
-    width: 280px;
+    width: 100%;
   }
 
   .image-large-container img {
