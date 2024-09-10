@@ -79,4 +79,9 @@
   .card-large-description {
     padding: 0 0 0 10px;
   }
+
+  .card-large-links {
+    justify-content: center;
+    gap: 5px;
+  }
 }
