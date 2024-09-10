@@ -1,8 +1,10 @@
 /* Custom properties */
 :root {
   --border-color: #727272;
-  --border-radius: 5px;
   --font-color-dark: #333333;
+  --card-background-color: #b1b1b1;
+  --card-active-color: #00f7ff;
+  --border-radius: 0px;
   --cards-max-width: 600px;
 }
 
@@ -22,6 +24,24 @@
   font-size: 0.8em;
 }
 
+.collapse-nav svg {
+  color: var(--font-color-dark);
+}
+
+.arrow-large-card {
+  height: 43px;
+}
+.arrow-large-card svg {
+  width: 30px;
+  height: 100%;
+  color: var(--font-color-dark);
+  vertical-align: middle;
+}
+
+.arrow-large-card.open {
+  background-color: var(--card-active-color);
+}
+
 main:last-child {
   margin-bottom: 20px;
 }
@@ -29,9 +49,38 @@ main:last-child {
 .projects-card-holder {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 1px;
   max-width: var(--cards-max-width);
   margin: 5px 0 5px 0;
+}
+
+/* .projects-card-holder > :first-child {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.projects-card-holder > :last-child {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+} */
+
+.title-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.title-large-card {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 43px;
+}
+
+.title-large-card.open {
+  max-height: 1000px;
+  background-color: var(--card-active-color);
 }
 
 .project-item {
@@ -42,33 +91,19 @@ main:last-child {
   cursor: default;
   color: var(--font-color-dark);
   background-color: var(--card-background-color);
-  border-bottom: 1px solid var(--border-color);
   transition: background-color 0.2s ease-in-out;
 }
 
-.project-item > * {
-  color: var(--font-color-grey);
-  font-weight: 400;
-}
-
-.project-item:first-child {
-  border-top-left-radius: var(--border-radius);
-  border-top-right-radius: var(--border-radius);
-}
-
-.project-item:last-child {
-  border-bottom: none;
-  border-bottom-left-radius: var(--border-radius);
-  border-bottom-right-radius: var(--border-radius);
+.project-item.open:last-child {
+  border-bottom: 1px solid var(--card-border-color);
 }
 
 .project-item:hover {
-  background-color: var(--link-bg-color);
+  background-color: var(--card-active-color);
 }
 
 .project-big-card {
   padding-top: 0;
-  background-color: var(--card-background-color);
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;

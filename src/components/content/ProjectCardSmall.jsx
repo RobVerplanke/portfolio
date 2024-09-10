@@ -47,7 +47,7 @@ export function ProjectCardSmall(props) {
                     className="text-nav-item"
                     onClick={resizeDescriptionContent}
                   >
-                    <ArrowLeftOutlinedIcon className="icon-nav-item" />
+                    <ArrowLeftOutlinedIcon className="icon-nav-item-small-card" />
                     Read less
                   </a>
                 </>
@@ -58,7 +58,7 @@ export function ProjectCardSmall(props) {
                     className="text-nav-item"
                     onClick={resizeDescriptionContent}
                   >
-                    <ArrowRightOutlinedIcon className="icon-nav-item" />
+                    <ArrowRightOutlinedIcon className="icon-nav-item-small-card" />
                     Read more
                   </a>
                 </>

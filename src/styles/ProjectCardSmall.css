@@ -4,6 +4,7 @@
   --card-background-gradient: linear-gradient(330deg, #a1a1a1 10%, #bdbdbd 90%);
   --card-outline-color: #a3a3a3;
   --card-links-border-color: #868686;
+  --font-color-dark: #333333;
   --cards-max-width: 600px;
 }
 
@@ -40,14 +41,13 @@
   font-size: 0.8em;
 }
 
-.icon-nav-item {
-  font-size: 1.8em;
+.icon-nav-item-small-card {
   vertical-align: middle;
+  transform: translate(4px, -2px);
 }
 
-.text-nav-item svg,
-.collapse-nav svg {
-  color: var(--button-bg-color);
+.text-nav-item svg {
+  color: var(--font-color-dark);
 }
 
 @media (max-width: 1000px) {

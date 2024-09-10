@@ -49,13 +49,13 @@ export default function ProjectsNav() {
             if (e.key === 'Enter') selectAllProjects();
           }}
         >
-          {allProjectsOpen ? ( // All cards are open
+          {allProjectsOpen ? ( // All cards are open, display arrow up
             <>
               <span>Close all&nbsp;</span>
               <ArrowDropUpOutlinedIcon className="icon-nav-item" />
             </>
           ) : (
-            // All cards are closed
+            // All cards are closed, display arrow down
             <>
               <span>Open all&nbsp;</span>
               <ArrowDropDownOutlinedIcon className="icon-nav-item" />
@@ -73,15 +73,37 @@ export default function ProjectsNav() {
             className={`project-item ${
               openProjectId.includes(project.id) ? 'open' : ''
             }`}
-            onClick={() => toggleProject(project.id)}
-            onKeyDown={(e) => {
-              if (e.key === 'Enter') {
-                toggleProject(project.id);
-              }
-            }}
           >
             {/* For each project, display the title and the corresponding card beneath it */}
-            <h2>{project.title}</h2>
+            <div
+              onClick={() => toggleProject(project.id)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter') {
+                  toggleProject(project.id);
+                }
+              }}
+              className="title-container"
+            >
+              <div
+                className={`title-large-card ${
+                  openProjectId.includes(project.id) ? 'open' : ''
+                }`}
+              >
+                <h3>{project.title}</h3>
+              </div>
+              {/* Display arrow up if cards is opened, Display arrow down if card is closed */}
+              <div
+                className={`arrow-large-card ${
+                  openProjectId.includes(project.id) ? 'open' : ''
+                }`}
+              >
+                {openProjectId.includes(project.id) ? (
+                  <ArrowDropUpOutlinedIcon />
+                ) : (
+                  <ArrowDropDownOutlinedIcon />
+                )}
+              </div>
+            </div>
             <div className="project-big-card">
               <ProjectCardLarge
                 key={project.id}
