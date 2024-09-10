@@ -67,8 +67,6 @@ export default function ProjectsNav() {
         {allProjects.map((project) => (
           <div
             aria-label={`Open project: ${project.title}`}
-            role="button"
-            tabIndex="0"
             key={project.id}
             className={`project-item ${
               openProjectId.includes(project.id) ? 'open' : ''
@@ -76,6 +74,8 @@ export default function ProjectsNav() {
           >
             {/* For each project, display the title and the corresponding card beneath it */}
             <div
+              role="button"
+              tabIndex="0"
               onClick={() => toggleProject(project.id)}
               onKeyDown={(e) => {
                 if (e.key === 'Enter') {

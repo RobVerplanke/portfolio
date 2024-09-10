@@ -112,9 +112,9 @@ main:last-child {
 .project-item.open .project-big-card {
   max-height: 1000px;
 }
-
+/* 
 @media (max-width: 600px) {
   .projects-card-holder {
     font-size: 0.8em;
   }
-}
+} */
