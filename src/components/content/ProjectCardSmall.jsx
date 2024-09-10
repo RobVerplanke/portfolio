@@ -44,8 +44,15 @@ export function ProjectCardSmall(props) {
                   {description}
                   {/* Add a read more/less button at the end of a description text */}
                   <a
+                    role="button"
+                    tabIndex="0"
                     className="text-nav-item"
                     onClick={resizeDescriptionContent}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter') {
+                        resizeDescriptionContent();
+                      }
+                    }}
                   >
                     <ArrowLeftOutlinedIcon className="icon-nav-item-small-card" />
                     Read less
@@ -55,8 +62,15 @@ export function ProjectCardSmall(props) {
                 <>
                   {truncateString(description)}
                   <a
+                    role="button"
+                    tabIndex="0"
                     className="text-nav-item"
                     onClick={resizeDescriptionContent}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter') {
+                        resizeDescriptionContent();
+                      }
+                    }}
                   >
                     <ArrowRightOutlinedIcon className="icon-nav-item-small-card" />
                     Read more
