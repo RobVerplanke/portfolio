@@ -129,6 +129,8 @@ main:last-child {
 }
 
 .bottom-nav-buttons {
+  width: 100%;
+  max-width: var(--cards-max-width);
   display: flex;
   justify-content: space-between;
 }
@@ -138,5 +140,12 @@ main:last-child {
   align-items: center;
   font-size: 0.8em;
   padding-left: 10px;
-  max-width: var(--cards-max-width);
+}
+
+@media (max-width: 600px) {
+  .bottom-nav-buttons {
+    max-width: var(--cards-max-width);
+    display: flex;
+    justify-content: space-between;
+  }
 }
