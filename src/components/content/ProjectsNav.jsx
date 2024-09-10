@@ -37,8 +37,8 @@ export default function ProjectsNav() {
 
   return (
     <main>
+      {/* Display buttons that opens or closes all cards at once */}
       <div className="toggle-all-projects-button">
-        {/* Display a button that opens or closes al cards */}
         <div
           className="collapse-nav"
           aria-label="Close all cards"
@@ -63,12 +63,14 @@ export default function ProjectsNav() {
           )}
         </div>
       </div>
-      <div className="projects-card-holder">
+
+      {/* Accordion navigation menu */}
+      <div className="menu-container">
         {allProjects.map((project) => (
           <div
             aria-label={`Open project: ${project.title}`}
             key={project.id}
-            className={`project-item ${
+            className={`menu-item ${
               openProjectId.includes(project.id) ? 'open' : ''
             }`}
           >
@@ -82,10 +84,10 @@ export default function ProjectsNav() {
                   toggleProject(project.id);
                 }
               }}
-              className="title-container"
+              className="item-title-container"
             >
               <div
-                className={`title-large-card ${
+                className={`item-title ${
                   openProjectId.includes(project.id) ? 'open' : ''
                 }`}
               >
@@ -93,7 +95,7 @@ export default function ProjectsNav() {
               </div>
               {/* Display arrow up if cards is opened, Display arrow down if card is closed */}
               <div
-                className={`arrow-large-card ${
+                className={`item-title-arrow ${
                   openProjectId.includes(project.id) ? 'open' : ''
                 }`}
               >

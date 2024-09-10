@@ -8,6 +8,10 @@
   --cards-max-width: 600px;
 }
 
+main:last-child {
+  margin-bottom: 20px;
+}
+
 .toggle-all-projects-button {
   display: flex;
   justify-content: flex-end;
@@ -28,25 +32,7 @@
   color: var(--font-color-dark);
 }
 
-.arrow-large-card {
-  height: 43px;
-}
-.arrow-large-card svg {
-  width: 30px;
-  height: 100%;
-  color: var(--font-color-dark);
-  vertical-align: middle;
-}
-
-.arrow-large-card.open {
-  background-color: var(--card-active-color);
-}
-
-main:last-child {
-  margin-bottom: 20px;
-}
-
-.projects-card-holder {
+.menu-container {
   display: flex;
   flex-direction: column;
   gap: 1px;
@@ -54,36 +40,25 @@ main:last-child {
   margin: 5px 0 5px 0;
 }
 
-/* .projects-card-holder > :first-child {
+.menu-container > :first-child {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
 
-.projects-card-holder > :last-child {
+.menu-container > :first-child.open > .item-title-container .item-title {
+  border-top-left-radius: 15px;
+}
+
+.menu-container > :first-child.open > .item-title-container .item-title-arrow {
+  border-top-right-radius: 15px;
+}
+
+.menu-container > :last-child {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-} */
-
-.title-container {
-  display: flex;
-  align-items: center;
-  width: 100%;
 }
 
-.title-large-card {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 43px;
-}
-
-.title-large-card.open {
-  max-height: 1000px;
-  background-color: var(--card-active-color);
-}
-
-.project-item {
+.menu-item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -94,11 +69,49 @@ main:last-child {
   transition: background-color 0.2s ease-in-out;
 }
 
-.project-item.open:last-child {
+.menu-item.open .project-big-card {
+  max-height: 1000px;
+}
+
+.menu-item.open:last-child {
+  border-radius: 0;
   border-bottom: 1px solid var(--card-border-color);
 }
 
-.project-item:hover {
+.menu-item:hover {
+  background-color: var(--card-active-color);
+}
+
+.item-title-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.item-title {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 43px;
+}
+
+.item-title.open {
+  background-color: var(--card-active-color);
+}
+
+.item-title-arrow svg {
+  width: 30px;
+  height: 100%;
+  color: var(--font-color-dark);
+  vertical-align: middle;
+}
+
+.item-title-arrow {
+  height: 43px;
+}
+
+.item-title-arrow.open {
   background-color: var(--card-active-color);
 }
 
@@ -108,13 +121,3 @@ main:last-child {
   overflow: hidden;
   transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
 }
-
-.project-item.open .project-big-card {
-  max-height: 1000px;
-}
-/* 
-@media (max-width: 600px) {
-  .projects-card-holder {
-    font-size: 0.8em;
-  }
-} */
