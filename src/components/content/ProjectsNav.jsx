@@ -36,6 +36,14 @@ export default function ProjectsNav() {
     }
   }, [allProjects, openProjectId]);
 
+  // Close all cards when there are open cards
+  const closeAllProjects = useCallback(() => {
+    if (openProjectId.length) {
+      setOpenProjectId([]); // Close all cards
+      return;
+    }
+  }, [openProjectId]);
+
   return (
     <main>
       {/* Display buttons that opens or closes all cards at once */}
@@ -117,31 +125,31 @@ export default function ProjectsNav() {
           </div>
         ))}
       </div>
-      {/* Extra 'close all' button at the bottom when all cards are open */}
+      {/* Extra 'close all' button at the bottom when one or more cards are open */}
       <div className="bottom-nav-buttons">
         {openProjectId.length ? (
-          <div className="button-to-top">
-            <ArrowRightOutlinedIcon />
-            <a href="#">Back to top</a>
-          </div>
+          <>
+            <div className="button-to-top">
+              <ArrowRightOutlinedIcon />
+              <a href="#">Back to top</a>
+            </div>
+            <div className="toggle-all-projects-button">
+              <div
+                aria-label="Close all cards"
+                role="button"
+                tabIndex="0"
+                onClick={closeAllProjects}
+                className="collapse-nav"
+              >
+                <>
+                  <span>Close all&nbsp;</span>
+                  <ArrowDropUpOutlinedIcon className="icon-nav-item" />
+                </>
+              </div>
+            </div>
+          </>
         ) : (
           ''
-        )}
-        {allProjectsOpen && (
-          <div className="toggle-all-projects-button">
-            <div
-              aria-label="Close all cards"
-              role="button"
-              tabIndex="0"
-              onClick={selectAllProjects}
-              className="collapse-nav"
-            >
-              <>
-                <span>Close all&nbsp;</span>
-                <ArrowDropUpOutlinedIcon className="icon-nav-item" />
-              </>
-            </div>
-          </div>
         )}
       </div>
     </main>
