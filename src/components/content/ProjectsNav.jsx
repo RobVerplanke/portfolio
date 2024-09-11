@@ -125,7 +125,7 @@ export default function ProjectsNav() {
           </div>
         ))}
       </div>
-      {/* Extra 'close all' button at the bottom when one or more cards are open */}
+      {/* Add a Back-to-top link at the bottom and a Close-all link when at least one card is open */}
       <div className="bottom-nav-buttons">
         {openProjectId.length ? (
           <>
@@ -135,11 +135,16 @@ export default function ProjectsNav() {
             </div>
             <div className="toggle-all-projects-button">
               <div
+                className="collapse-nav"
                 aria-label="Close all cards"
                 role="button"
                 tabIndex="0"
                 onClick={closeAllProjects}
-                className="collapse-nav"
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter') {
+                    closeAllProjects();
+                  }
+                }}
               >
                 <>
                   <span>Close all&nbsp;</span>

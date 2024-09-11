@@ -8,6 +8,8 @@
   --card-active-color: #00f7ff;
   --border-radius: 0px;
   --cards-max-width: 600px;
+  --menu-button-size: 50px;
+  --menu-row-gap: 2px;
 }
 
 main:last-child {
@@ -38,7 +40,7 @@ main:last-child {
 .menu-container {
   display: flex;
   flex-direction: column;
-  gap: 1px;
+  gap: var(--menu-row-gap);
   max-width: var(--cards-max-width);
   margin: 5px 0 5px 0;
 }
@@ -97,7 +99,7 @@ main:last-child {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 43px;
+  height: var(--menu-button-size);
 }
 
 .item-title.open {
@@ -106,15 +108,15 @@ main:last-child {
 }
 
 .item-title-arrow svg {
-  width: 50px;
+  width: var(--menu-button-size);
   height: 100%;
   color: var(--font-color-dark);
   vertical-align: middle;
 }
 
 .item-title-arrow {
+  height: var(--menu-button-size);
   padding-right: 10px;
-  height: 43px;
 }
 
 .item-title-arrow.open {
@@ -129,10 +131,10 @@ main:last-child {
 }
 
 .bottom-nav-buttons {
-  width: 100%;
-  max-width: var(--cards-max-width);
   display: flex;
   justify-content: space-between;
+  max-width: var(--cards-max-width);
+  width: 100%;
 }
 
 .button-to-top {
