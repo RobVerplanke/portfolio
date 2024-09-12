@@ -1,4 +1,6 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react/no-unknown-property */
+import { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import '../../styles/ContactForm.css';
@@ -35,6 +37,12 @@ export default function ContactForm() {
       .catch((error) => alert(error));
   };
 
+  const inputRef = useRef(null);
+
+  useEffect(() => {
+    inputRef.current?.focus();
+  }, []);
+
   return (
     <section>
       <div className="form-holder">
@@ -52,6 +60,7 @@ export default function ContactForm() {
           <label htmlFor="subject">Subject:</label>
           <br />
           <input
+            ref={inputRef}
             type="text"
             id="subject"
             name="subject"
