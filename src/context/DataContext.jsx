@@ -7,14 +7,9 @@ import getAllProjectsData from '../data/getAllProjects.js';
 
 const DataContext = createContext();
 const projectsList = getAllProjectsData();
-const projectSelection = projectsList.filter(
-  (project) => project.selected === true
-);
+const projectSelection = projectsList.filter((project) => project.selected);
 
-console.log('projectsList: ', projectsList);
-console.log('projectSelection: ', projectSelection);
-
-// Provide project data to components that need to display data
+// Provide data to components that need to display data
 export function DataProvider({ children }) {
   const [activePage, setActivePage] = useState({ title: 'home' });
   const [allProjects, setAllProjects] = useState(projectsList);

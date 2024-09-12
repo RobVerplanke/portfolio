@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react/no-unknown-property */
 import { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -7,6 +6,7 @@ import '../../styles/ContactForm.css';
 
 export default function ContactForm() {
   const navigate = useNavigate();
+  const inputRef = useRef(null);
 
   // Set up sending direct message data to Netlify notification box
   function encode(data) {
@@ -37,8 +37,7 @@ export default function ContactForm() {
       .catch((error) => alert(error));
   };
 
-  const inputRef = useRef(null);
-
+  // Every firts time component renders, set focus on first input field
   useEffect(() => {
     inputRef.current?.focus();
   }, []);
