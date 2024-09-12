@@ -4,17 +4,21 @@
 
 import { createContext, useContext, useState } from 'react';
 import getAllProjectsData from '../data/getAllProjects.js';
-import getSelectedProjectsData from '../data/getSelectedProjects.js';
 
 const DataContext = createContext();
+const projectsList = getAllProjectsData();
+const projectSelection = projectsList.filter(
+  (project) => project.selected === true
+);
 
-// Provide project data to components that need to display project cards
+console.log('projectsList: ', projectsList);
+console.log('projectSelection: ', projectSelection);
+
+// Provide project data to components that need to display data
 export function DataProvider({ children }) {
   const [activePage, setActivePage] = useState({ title: 'home' });
-  const [allProjects, setAllProjects] = useState(getAllProjectsData());
-  const [selectedProjects, setSelectedProjects] = useState(
-    getSelectedProjectsData()
-  );
+  const [allProjects, setAllProjects] = useState(projectsList);
+  const [selectedProjects, setSelectedProjects] = useState(projectSelection);
 
   return (
     <DataContext.Provider
