@@ -44,7 +44,7 @@ export default function ContactForm() {
 
   return (
     <section>
-      <div className="form-holder">
+      <div className="form-container">
         <h3>Direct message</h3>
 
         <form

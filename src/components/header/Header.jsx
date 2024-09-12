@@ -6,13 +6,13 @@ import '../../styles/header/Header.css';
 function Header() {
   return (
     <header>
-      <div className="header-logo">
+      <div className="header__logo">
         <HeaderLogo />
       </div>
-      <div className="header-nav">
+      <div className="header__nav">
         <NavBar />
       </div>
-      <div className="header-empty-bar"></div>
+      <div className="header__empty-bar"></div>
     </header>
   );
 }

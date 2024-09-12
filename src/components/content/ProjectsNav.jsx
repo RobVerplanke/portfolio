@@ -47,9 +47,9 @@ export default function ProjectsNav() {
   return (
     <main>
       {/* Display buttons that opens or closes all cards at once */}
-      <div className="toggle-all-projects-button">
+      <div className="top-options">
         <div
-          className="collapse-nav"
+          className="top-options__buttons"
           aria-label="Close all cards"
           role="button"
           tabIndex="0"
@@ -77,14 +77,15 @@ export default function ProjectsNav() {
       <div className="menu-container">
         {allProjects.map((project) => (
           <div
-            aria-label={`Open project: ${project.title}`}
-            key={project.id}
-            className={`menu-item ${
+            className={`menu-container__item ${
               openProjectId.includes(project.id) ? 'open' : ''
             }`}
+            aria-label={`Open project: ${project.title}`}
+            key={project.id}
           >
             {/* For each project, display the title and the corresponding card beneath it */}
             <div
+              className="menu-container__item__title-container"
               role="button"
               tabIndex="0"
               onClick={() => toggleProject(project.id)}
@@ -93,10 +94,9 @@ export default function ProjectsNav() {
                   toggleProject(project.id);
                 }
               }}
-              className="item-title-container"
             >
               <div
-                className={`item-title ${
+                className={`menu-container__item__title-container__title ${
                   openProjectId.includes(project.id) ? 'open' : ''
                 }`}
               >
@@ -104,7 +104,7 @@ export default function ProjectsNav() {
               </div>
               {/* Display arrow up if cards is opened, Display arrow down if card is closed */}
               <div
-                className={`item-title-arrow ${
+                className={`menu-container__item__title-container__arrow ${
                   openProjectId.includes(project.id) ? 'open' : ''
                 }`}
               >
@@ -115,7 +115,7 @@ export default function ProjectsNav() {
                 )}
               </div>
             </div>
-            <div className="project-big-card">
+            <div className="menu-container__item__card">
               <ProjectCardLarge
                 key={project.id}
                 isOpen={openProjectId.includes(project.id)}
@@ -125,32 +125,31 @@ export default function ProjectsNav() {
           </div>
         ))}
       </div>
-      {/* Add a Back-to-top link at the bottom and a Close-all link when at least one card is open */}
-      <div className="bottom-nav-buttons">
+      {/* Add a Back-to-top link at the bottom */}
+      <div className="bottom-options">
         {openProjectId.length ? (
           <>
-            <div className="button-to-top">
+            <div className="bottom-options__buttons">
               <ArrowRightOutlinedIcon />
               <a href="#">Back to top</a>
             </div>
-            <div className="toggle-all-projects-button">
-              <div
-                className="collapse-nav"
-                aria-label="Close all cards"
-                role="button"
-                tabIndex="0"
-                onClick={closeAllProjects}
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter') {
-                    closeAllProjects();
-                  }
-                }}
-              >
-                <>
-                  <span>Close all&nbsp;</span>
-                  <ArrowDropUpOutlinedIcon className="icon-nav-item" />
-                </>
-              </div>
+            <div
+              // Add a Close-all link at the bottom aswell when at least one card is open
+              className="top-options__buttons"
+              aria-label="Close all cards"
+              role="button"
+              tabIndex="0"
+              onClick={closeAllProjects}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter') {
+                  closeAllProjects();
+                }
+              }}
+            >
+              <>
+                <span>Close all&nbsp;</span>
+                <ArrowDropUpOutlinedIcon className="icon-nav-item" />
+              </>
             </div>
           </>
         ) : (

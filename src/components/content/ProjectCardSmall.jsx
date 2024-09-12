@@ -26,10 +26,10 @@ export function ProjectCardSmall(props) {
 
   return (
     <article>
-      <div className="projects-preview-card">
+      <div className="project-card-small">
         <div className="content-container">
           {/* Image container */}
-          <div className="image-container">
+          <div className="project-card-small__image-container">
             <img src={imageSmall} alt={altText} width="183" height="183" />
           </div>
           <h4>
@@ -37,7 +37,7 @@ export function ProjectCardSmall(props) {
           </h4>
 
           {/* Project description area */}
-          <div className="card-description">
+          <div className="project-card-small__description">
             <p>
               {isReadMoreActive ? (
                 <>
@@ -46,7 +46,7 @@ export function ProjectCardSmall(props) {
                   <a
                     role="button"
                     tabIndex="0"
-                    className="text-nav-item"
+                    className="project-card-small__text-nav-item"
                     onClick={resizeDescriptionContent}
                     onKeyDown={(e) => {
                       if (e.key === 'Enter') {
@@ -54,7 +54,7 @@ export function ProjectCardSmall(props) {
                       }
                     }}
                   >
-                    <ArrowLeftOutlinedIcon className="icon-nav-item-small-card" />
+                    <ArrowLeftOutlinedIcon className="project-card-small__icon-nav-item" />
                     Read less
                   </a>
                 </>
@@ -64,7 +64,7 @@ export function ProjectCardSmall(props) {
                   <a
                     role="button"
                     tabIndex="0"
-                    className="text-nav-item"
+                    className="project-card-small__text-nav-item"
                     onClick={resizeDescriptionContent}
                     onKeyDown={(e) => {
                       if (e.key === 'Enter') {
@@ -72,7 +72,7 @@ export function ProjectCardSmall(props) {
                       }
                     }}
                   >
-                    <ArrowRightOutlinedIcon className="icon-nav-item-small-card" />
+                    <ArrowRightOutlinedIcon className="project-card-small__icon-nav-item" />
                     Read more
                   </a>
                 </>
@@ -81,11 +81,19 @@ export function ProjectCardSmall(props) {
           </div>
         </div>
         {/* Link for live preview and code */}
-        <div className="project-links">
-          <a className="text-nav-item" href={liveLink} target="_blank">
+        <div className="project-card-small__links">
+          <a
+            className="project-card-small__text-nav-item"
+            href={liveLink}
+            target="_blank"
+          >
             Live version
           </a>
-          <a className="text-nav-item" href={codeLink} target="_blank">
+          <a
+            className="project-card-small__text-nav-item"
+            href={codeLink}
+            target="_blank"
+          >
             View code
           </a>
         </div>

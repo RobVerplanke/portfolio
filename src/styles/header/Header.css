@@ -1,14 +1,14 @@
-.header-logo {
+.header__logo {
   flex: 1;
 }
 
-.header-nav {
+.header__nav {
   flex: 1;
   display: flex;
   gap: 30px;
 }
 
-.header-empty-bar {
+.header__empty-bar {
   flex: 1;
 }
 

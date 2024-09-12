@@ -6,13 +6,6 @@
   --button-hover-border-color: #858585;
 }
 
-.text-nav-item {
-  color: var(--font-color-dark);
-  font-weight: 700;
-  text-decoration: none;
-  cursor: pointer;
-}
-
 .button-nav-item,
 .button-nav-item-highlighted {
   font-size: 1.4em;
