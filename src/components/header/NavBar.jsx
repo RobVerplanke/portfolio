@@ -14,12 +14,12 @@ function NavBar() {
     <nav>
       {/* Home Page */}
       <Link
-        aria-label="Go to Homepage"
         className={`${
           activePage.title === 'home'
             ? 'button-nav-item button-nav-item-selected'
             : 'button-nav-item'
         }`}
+        aria-label="Go to Homepage"
         to="/home"
         onClick={() => handleClick({ title: 'home' })}
       >
@@ -28,12 +28,12 @@ function NavBar() {
 
       {/* About Page */}
       <Link
-        aria-label="Go to About-me page"
         className={`${
           activePage.title === 'about'
             ? 'button-nav-item button-nav-item-selected'
             : 'button-nav-item'
         }`}
+        aria-label="Go to About-me page"
         to="/about"
         onClick={() => handleClick({ title: 'about' })}
       >
@@ -42,12 +42,12 @@ function NavBar() {
 
       {/* Projects Page */}
       <Link
-        aria-label="Go to Projectspage"
         className={`${
           activePage.title === 'projects'
             ? 'button-nav-item button-nav-item-selected'
             : 'button-nav-item'
         }`}
+        aria-label="Go to Projectspage"
         to="/projects"
         onClick={() => handleClick({ title: 'projects' })}
       >
@@ -56,12 +56,12 @@ function NavBar() {
 
       {/* Contact Page */}
       <Link
-        aria-label="Go to Contactpage"
         className={`${
           activePage.title === 'contact'
-            ? 'button-nav-item-highlighted button-nav-item-highlighted-selected'
-            : 'button-nav-item-highlighted'
+            ? 'button-nav-item--highlighted button-nav-item--highlighted-selected'
+            : 'button-nav-item--highlighted'
         }`}
+        aria-label="Go to Contactpage"
         to="/contact"
         onClick={() => handleClick({ title: 'contact' })}
       >
