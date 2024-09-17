@@ -1,14 +1,29 @@
 /* eslint-disable react/prop-types */
 import htmlIcon from '../../assets/icons/html-icon.png';
 import csslIcon from '../../assets/icons/css-icon.png';
-import jsIcon from '../../assets/icons/js-icon.png';
+import javascriptIcon from '../../assets/icons/js-icon.png';
 import reactIcon from '../../assets/icons/react-icon.png';
 
 import '../../styles/ProjectCardLarge.css';
 
+// Used to generate icons dynamicly from the object
+const skillIcons = {
+  html: htmlIcon,
+  css: csslIcon,
+  javascript: javascriptIcon,
+  react: reactIcon,
+};
+
 export function ProjectCardLarge({ isOpen, value }) {
-  const { subTitle, description, imageMed, altText, liveLink, codeLink } =
-    value;
+  const {
+    subTitle,
+    description,
+    imageMed,
+    altText,
+    liveLink,
+    codeLink,
+    skills,
+  } = value;
 
   return (
     <article>
@@ -59,12 +74,13 @@ export function ProjectCardLarge({ isOpen, value }) {
         </div>
         <br />
 
-        {/* Icons of used techniques */}
+        {/* Display icons of the used techniques in this project */}
         <div className="project-card-large__skills">
-          <img src={htmlIcon} alt="HTML-5 icon" />
-          <img src={csslIcon} alt="CSS-3 icon" />
-          <img src={jsIcon} alt="Javascript icon" />
-          <img src={reactIcon} alt="React icon" />
+          {skills.map((skill) => {
+            return (
+              <img key={skill} src={skillIcons[skill]} alt={`${skill} Icon`} />
+            );
+          })}
         </div>
       </div>
     </article>

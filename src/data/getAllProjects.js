@@ -14,6 +14,7 @@ export default function getAllProjects() {
       altText: 'Screenshot of Multi Shoppee',
       liveLink: 'https://lovely-vacherin-d4496c.netlify.app/',
       codeLink: 'https://github.com/RobVerplanke/project-shopping-cart',
+      skills: ['html', 'css', 'javascript', 'react'],
       selected: true,
     },
     {
@@ -27,6 +28,7 @@ export default function getAllProjects() {
       altText: 'Screenshot of Multi Shoppee',
       liveLink: 'https://lovely-vacherin-d4496c.netlify.app/',
       codeLink: 'https://github.com/RobVerplanke/project-shopping-cart',
+      skills: ['html', 'css', 'javascript', 'react'],
       selected: true,
     },
     {
@@ -40,6 +42,7 @@ export default function getAllProjects() {
       altText: 'Screenshot of Multi Shoppee',
       liveLink: 'https://lovely-vacherin-d4496c.netlify.app/',
       codeLink: 'https://github.com/RobVerplanke/project-shopping-cart',
+      skills: ['html', 'css', 'javascript', 'react'],
       selected: true,
     },
     {
@@ -53,6 +56,7 @@ export default function getAllProjects() {
       altText: 'Screenshot of Multi Shoppee',
       liveLink: 'https://lovely-vacherin-d4496c.netlify.app/',
       codeLink: 'https://github.com/RobVerplanke/project-shopping-cart',
+      skills: ['html', 'css', 'javascript'],
       selected: false,
     },
     {
@@ -66,6 +70,7 @@ export default function getAllProjects() {
       altText: 'Screenshot of Multi Shoppee',
       liveLink: 'https://lovely-vacherin-d4496c.netlify.app/',
       codeLink: 'https://github.com/RobVerplanke/project-shopping-cart',
+      skills: ['html', 'css', 'react'],
       selected: false,
     },
   ];
