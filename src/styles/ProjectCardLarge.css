@@ -16,6 +16,14 @@
   border-right: 1px solid var(--card-border-color);
 }
 
+.project-card-large h4 {
+  margin-top: 30px;
+}
+
+.project-card-large li {
+  margin-left: 24px;
+}
+
 .project-card-large__image-container img {
   border-radius: 20px;
 }

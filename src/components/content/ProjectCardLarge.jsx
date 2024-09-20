@@ -1,4 +1,6 @@
 /* eslint-disable react/prop-types */
+
+import { formatProjectDescription } from '../../utils/helperFunctions.jsx';
 import htmlIcon from '../../assets/icons/html-icon.png';
 import csslIcon from '../../assets/icons/css-icon.png';
 import javascriptIcon from '../../assets/icons/js-icon.png';
@@ -24,6 +26,8 @@ export function ProjectCardLarge({ isOpen, value }) {
     codeLink,
     skills,
   } = value;
+
+  const formattedDescription = formatProjectDescription(description);
 
   return (
     <article>
@@ -70,7 +74,7 @@ export function ProjectCardLarge({ isOpen, value }) {
         {/* Description of the project */}
 
         <div className="project-card-large__description">
-          <p>{description}</p>
+          {formattedDescription}
         </div>
         <br />
 

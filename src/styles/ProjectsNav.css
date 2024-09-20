@@ -81,7 +81,7 @@ main:last-child {
 }
 
 .menu-container__item.open .menu-container__item__card {
-  max-height: 1000px;
+  max-height: 1400px;
 }
 
 .menu-container__item.open:last-child {
