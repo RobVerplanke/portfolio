@@ -6,7 +6,6 @@
   --accordion-hover-font-color: #333333;
   --card-background-color: #b1b1b1;
   --card-active-color: #00f7ff;
-  --border-radius: 0px;
   --cards-max-width: 600px;
   --menu-button-size: 50px;
   --menu-row-gap: 2px;
@@ -60,7 +59,7 @@ main:last-child {
 .menu-container
   > :first-child.open
   > .menu-container__item__title-container
-  .menu-container__item__title-container__title-arrow {
+  .menu-container__item__title-container__arrow {
   border-top-right-radius: 15px;
 }
 
