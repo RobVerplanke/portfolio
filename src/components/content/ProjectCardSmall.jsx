@@ -1,6 +1,8 @@
 /* eslint-disable react/prop-types */
 import { useState } from 'react';
-import truncateString from '../../utils/helperFunctions.jsx';
+import truncateString, {
+  formatProjectDescription,
+} from '../../utils/helperFunctions.jsx';
 import ArrowRightOutlinedIcon from '@mui/icons-material/ArrowRightOutlined';
 import ArrowLeftOutlinedIcon from '@mui/icons-material/ArrowLeftOutlined';
 
@@ -17,6 +19,8 @@ export function ProjectCardSmall(props) {
     codeLink,
   } = props.value;
 
+  const formattedDescription = formatProjectDescription(description);
+
   // Needed to decide if the full description or a shortened version is displayed
   const [isReadMoreActive, setIsReadMoreActive] = useState(false);
 
@@ -32,52 +36,50 @@ export function ProjectCardSmall(props) {
           <div className="project-card-small__image-container">
             <img src={imageSmall} alt={altText} width="183" height="183" />
           </div>
-          <h4>
+          <h3>
             {title} - {subTitle}
-          </h4>
+          </h3>
 
           {/* Project description area */}
           <div className="project-card-small__description">
-            <p>
-              {isReadMoreActive ? (
-                <>
-                  {description}
-                  {/* Add a read more/less button at the end of a description text */}
-                  <a
-                    role="button"
-                    tabIndex="0"
-                    className="project-card-small__text-nav-item"
-                    onClick={resizeDescriptionContent}
-                    onKeyDown={(e) => {
-                      if (e.key === 'Enter') {
-                        resizeDescriptionContent();
-                      }
-                    }}
-                  >
-                    <ArrowLeftOutlinedIcon className="project-card-small__icon-nav-item" />
-                    Read less
-                  </a>
-                </>
-              ) : (
-                <>
-                  {truncateString(description)}
-                  <a
-                    role="button"
-                    tabIndex="0"
-                    className="project-card-small__text-nav-item"
-                    onClick={resizeDescriptionContent}
-                    onKeyDown={(e) => {
-                      if (e.key === 'Enter') {
-                        resizeDescriptionContent();
-                      }
-                    }}
-                  >
-                    <ArrowRightOutlinedIcon className="project-card-small__icon-nav-item" />
-                    Read more
-                  </a>
-                </>
-              )}
-            </p>
+            {isReadMoreActive ? (
+              <>
+                {formattedDescription}
+                {/* Add a read more/less button at the end of a description text */}
+                <a
+                  role="button"
+                  tabIndex="0"
+                  className="project-card-small__text-nav-item"
+                  onClick={resizeDescriptionContent}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter') {
+                      resizeDescriptionContent();
+                    }
+                  }}
+                >
+                  <ArrowLeftOutlinedIcon className="project-card-small__icon-nav-item" />
+                  Read less
+                </a>
+              </>
+            ) : (
+              <>
+                {truncateString(formattedDescription)}
+                <a
+                  role="button"
+                  tabIndex="0"
+                  className="project-card-small__text-nav-item"
+                  onClick={resizeDescriptionContent}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter') {
+                      resizeDescriptionContent();
+                    }
+                  }}
+                >
+                  <ArrowRightOutlinedIcon className="project-card-small__icon-nav-item" />
+                  Read more
+                </a>
+              </>
+            )}
           </div>
         </div>
         {/* Link for live preview and code */}

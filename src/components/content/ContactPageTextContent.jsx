@@ -1,7 +1,7 @@
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import CONTACT_EMAIL_ADRES from '../../lib/constants.js';
+import { CONTACT_EMAIL_ADRES } from '../../lib/constants.js';
 
 import '../../styles/ContactTextContent.css';
 

@@ -9,7 +9,7 @@ export function ProjectSelection() {
 
   return (
     <>
-      <h3>Project selection</h3>
+      <h2>Project selection</h2>
       <section className="project-selection-holder">
         {selectedProjects.map((project) => (
           <ProjectCardSmall key={project.id} value={project} />
