@@ -56,7 +56,7 @@
 }
 
 .project-card-small__read-nav-item {
-  margin: 0 0 0 0;
+  margin: 0 0 0 -7px;
   font-weight: 700;
 }
 
