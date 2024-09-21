@@ -49,7 +49,7 @@ export function ProjectCardSmall(props) {
                 <a
                   role="button"
                   tabIndex="0"
-                  className="project-card-small__text-nav-item"
+                  className="project-card-small__read-nav-item"
                   onClick={resizeDescriptionContent}
                   onKeyDown={(e) => {
                     if (e.key === 'Enter') {
@@ -67,7 +67,7 @@ export function ProjectCardSmall(props) {
                 <a
                   role="button"
                   tabIndex="0"
-                  className="project-card-small__text-nav-item"
+                  className="project-card-small__read-nav-item"
                   onClick={resizeDescriptionContent}
                   onKeyDown={(e) => {
                     if (e.key === 'Enter') {

@@ -52,7 +52,12 @@
 
 .project-card-small__icon-nav-item {
   vertical-align: middle;
-  transform: translate(4px, -1px);
+  margin: -2px -5px 0 0;
+}
+
+.project-card-small__read-nav-item {
+  margin: 0 0 0 0;
+  font-weight: 700;
 }
 
 .project-card-small__text-nav-item {
