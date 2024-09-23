@@ -5,26 +5,30 @@ function About() {
         <h2>Who am i</h2>
         <br />
         <p>
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur.
+          I’m 42 and currently living in Groningen, the Netherlands. I completed
+          an MBO in Technical Informatics and pursued HBO studies in
+          Communication & Multimedia Design. During internships at various web
+          design companies, I gained valuable experience working on and building
+          websites for clients.
           <br />
           <br />
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-          officia deserunt mollit anim id est laborum.
-          <br /> Section 1.10.32 of de Finibus Bonorum et Malorum, written by
-          Cicero in 45 BC Sed ut perspiciatis unde omnis iste natus error sit
-          voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
-          ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-          dicta sunt explicabo.
+          After stepping away from web development for a long while, I decided
+          to dive back in and retrain myself, focusing on new technologies like
+          build tools and frameworks, which I find fascinating.
           <br />
           <br />
-          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-          fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
-          sequi nesciunt.
+          What attracts me to web development is the challenge of
+          problem-solving and the constant opportunity to learn how to code
+          better and adapt to new techniques. I’ve built a solid foundation in
+          HTML, CSS, JavaScript, and React, and I’m continually working to
+          improve those and other skills through self-study. For now, my focus
+          is on becoming proficient in front-end development before exploring
+          other areas.
           <br />
-          Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-          consectetur, adipisci velit, sed quia non numquam eius modi tempora
-          incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+          <br />I enjoy learning and have realized how important it is for me to
+          keep developing in my work, so I actively seek opportunities to grow
+          and evolve. Ultimately, my goal is to turn web development into my
+          full-time profession.
         </p>
       </section>
     </main>

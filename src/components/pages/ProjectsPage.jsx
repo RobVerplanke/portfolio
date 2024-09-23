@@ -8,9 +8,12 @@ function Projects() {
       </div>
       <p>
         <br />
-        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-        consectetur, adipisci velit, sed quia non numquam eius modi tempora
-        incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+        Below, you&apos;ll find a comprehensive list of all the projects
+        I&apos;ve created, showcasing my growth and skills as a developer.
+        <br />
+        <br />
+        Each project highlights unique challenges and solutions, offering a
+        deeper insight into my journey and the technologies I&apos;ve used.
       </p>
       <ProjectsNav />
     </main>

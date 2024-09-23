@@ -10,12 +10,7 @@ export function HomePageTextContent() {
         <br />
         <br />
         This portfolio showcases my journey so far, featuring projects that
-        highlight my growing skills in HTML,
-        <br /> CSS, JavaScript, and React. This portfolio showcases my journey
-        so far,
-        <br />
-        <br /> featuring projects that highlight my growing skills in HTML, CSS,
-        JavaScript, and React.
+        highlight my growing skills in HTML, CSS, JavaScript, and React.
       </p>
     </section>
   );
