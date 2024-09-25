@@ -21,7 +21,7 @@ export default function getAllProjects() {
       id: 2,
       title: 'CD-manager',
       subTitle: 'Manage your cd-collection',
-      description: `COMING SOON... This app allows users to manage their personal CD collection locally. Users can add, edit, and remove albums, CDs, and tracks from their collection, rate each item, and organize their library with tags and categories. While building this app i will use Typescript and new React hooks`,
+      description: `COMING SOON - A project where i will use Typescript, Tailwind and new React hooks. This app allows users to manage their personal CD collection locally. Users can add, edit, and remove albums, CDs, and tracks from their collection, rate each item, and organize their library with tags and categories.`,
       imageSmall: 'https://placehold.co/180x180',
       imageMed: 'https://placehold.co/400x400',
       altText: '',
