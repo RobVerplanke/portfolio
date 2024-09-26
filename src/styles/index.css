@@ -155,3 +155,10 @@ nav a:last-child {
     margin-left: 0;
   }
 }
+
+@media (max-width: 600px) {
+  .main-sidebar {
+    padding: 0 5px 0 5px;
+    flex: 0;
+  }
+}

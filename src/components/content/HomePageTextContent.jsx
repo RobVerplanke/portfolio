@@ -1,6 +1,8 @@
+import '../../styles/HomePageContent.css';
+
 export function HomePageTextContent() {
   return (
-    <section>
+    <section className="homepage-text-content">
       <h2>An aspiring Front-End Developer</h2>
       <br />
       <p>
