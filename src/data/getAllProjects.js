@@ -1,5 +1,7 @@
-import smallImage from '../assets/screenshots/shopping-cart-s.png';
-import medImage from '../assets/screenshots/shopping-cart-m.png';
+import smallImage from '../assets/screenshots/shopping-cart-s.jpg';
+import medImage from '../assets/screenshots/shopping-cart-m.jpg';
+import smallSkeleton from '../assets/screenshots/skeleton-s.png';
+import medSkeleton from '../assets/screenshots/skeleton-m.png';
 
 export default function getAllProjects() {
   return [
@@ -22,8 +24,8 @@ export default function getAllProjects() {
       title: 'CD-manager',
       subTitle: 'Manage your cd-collection',
       description: `COMING SOON - A project where i will use Typescript, Tailwind and new React hooks. This app allows users to manage their personal CD collection locally. Users can add, edit, and remove albums, CDs, and tracks from their collection, rate each item, and organize their library with tags and categories.`,
-      imageSmall: 'https://placehold.co/180x180',
-      imageMed: 'https://placehold.co/400x400',
+      imageSmall: smallSkeleton,
+      imageMed: medSkeleton,
       altText: '',
       liveLink: '',
       codeLink: 'https://github.com/RobVerplanke/cd-manager-react',
@@ -36,8 +38,8 @@ export default function getAllProjects() {
       subTitle: 'Subtitle placeholder',
       description:
         'Lorem ipsum odor amet, consectetuer adipiscing elit. Iaculis maecenas sapien tempor consequat urna praesent. Amet finibus habitasse integer at nostra; nisl blandit. Quam ligula lectus cubilia tortor justo montes iaculis auctor. Dapibus a ut maecenas a pretium luctus sociosqu vulputate! In phasellus at feugiat fusce efficitur bibendum mus class conubia. Suspendisse dictum nibh lectus vehicula nam laoreet morbi diam. Justo aliquet faucibus vel euismod hendrerit sociosqu ullamcorper duis. Iaculis praesent lectus; donec velit nascetur praesent. Congue laoreet nam sit proin purus sed dictum ligula. Sociosqu ligula mauris sapien primis habitant. Posuere eleifend habitant sagittis tellus sociosqu taciti nostra molestie magnis. Mauris convallis nulla facilisi hac litora cubilia. Luctus malesuada nunc sollicitudin et amet lectus metus facilisis. Vitae ut libero adipiscing cras scelerisque auctor leo aptent. Morbi massa vulputate blandit orci nisi; inceptos tellus diam metus. Montes vulputate dictum consequat primis imperdiet; orci convallis tempus iaculis. Et et cras consequat massa conubia ante cursus id. Ut per quisque velit porttitor ipsum bibendum. Ante feugiat orci est, velit vulputate ultrices neque scelerisque. Sagittis vivamus conubia aliquam in sem sit odio. Magnis curae purus hendrerit nulla ridiculus. Conubia diam curae platea congue; montes ullamcorper tristique cras. Massa egestas in torquent purus imperdiet fringilla pretium. Massa montes inceptos sagittis varius nisi est.',
-      imageSmall: 'https://placehold.co/180x180',
-      imageMed: 'https://placehold.co/400x400',
+      imageSmall: smallSkeleton,
+      imageMed: medSkeleton,
       altText: '',
       liveLink: '',
       codeLink: 'https://github.com/RobVerplanke',
@@ -50,8 +52,8 @@ export default function getAllProjects() {
       subTitle: 'Subtitle placeholder',
       description:
         'Lorem ipsum odor amet, consectetuer adipiscing elit. Iaculis maecenas sapien tempor consequat urna praesent. Amet finibus habitasse integer at nostra; nisl blandit. Quam ligula lectus cubilia tortor justo montes iaculis auctor. Dapibus a ut maecenas a pretium luctus sociosqu vulputate! In phasellus at feugiat fusce efficitur bibendum mus class conubia. Suspendisse dictum nibh lectus vehicula nam laoreet morbi diam. Justo aliquet faucibus vel euismod hendrerit sociosqu ullamcorper duis. Iaculis praesent lectus; donec velit nascetur praesent. Congue laoreet nam sit proin purus sed dictum ligula. Sociosqu ligula mauris sapien primis habitant. Posuere eleifend habitant sagittis tellus sociosqu taciti nostra molestie magnis. Mauris convallis nulla facilisi hac litora cubilia. Luctus malesuada nunc sollicitudin et amet lectus metus facilisis. Vitae ut libero adipiscing cras scelerisque auctor leo aptent. Morbi massa vulputate blandit orci nisi; inceptos tellus diam metus. Montes vulputate dictum consequat primis imperdiet; orci convallis tempus iaculis. Et et cras consequat massa conubia ante cursus id. Ut per quisque velit porttitor ipsum bibendum. Ante feugiat orci est, velit vulputate ultrices neque scelerisque. Sagittis vivamus conubia aliquam in sem sit odio. Magnis curae purus hendrerit nulla ridiculus. Conubia diam curae platea congue; montes ullamcorper tristique cras. Massa egestas in torquent purus imperdiet fringilla pretium. Massa montes inceptos sagittis varius nisi est.',
-      imageSmall: 'https://placehold.co/180x180',
-      imageMed: 'https://placehold.co/400x400',
+      imageSmall: smallSkeleton,
+      imageMed: medSkeleton,
       altText: '',
       liveLink: '',
       codeLink: 'https://github.com/RobVerplanke',
@@ -64,8 +66,8 @@ export default function getAllProjects() {
       subTitle: 'Subtitle placeholder',
       description:
         'Lorem ipsum odor amet, consectetuer adipiscing elit. Iaculis maecenas sapien tempor consequat urna praesent. Amet finibus habitasse integer at nostra; nisl blandit. Quam ligula lectus cubilia tortor justo montes iaculis auctor. Dapibus a ut maecenas a pretium luctus sociosqu vulputate! In phasellus at feugiat fusce efficitur bibendum mus class conubia. Suspendisse dictum nibh lectus vehicula nam laoreet morbi diam. Justo aliquet faucibus vel euismod hendrerit sociosqu ullamcorper duis. Iaculis praesent lectus; donec velit nascetur praesent. Congue laoreet nam sit proin purus sed dictum ligula. Sociosqu ligula mauris sapien primis habitant. Posuere eleifend habitant sagittis tellus sociosqu taciti nostra molestie magnis. Mauris convallis nulla facilisi hac litora cubilia. Luctus malesuada nunc sollicitudin et amet lectus metus facilisis. Vitae ut libero adipiscing cras scelerisque auctor leo aptent. Morbi massa vulputate blandit orci nisi; inceptos tellus diam metus. Montes vulputate dictum consequat primis imperdiet; orci convallis tempus iaculis. Et et cras consequat massa conubia ante cursus id. Ut per quisque velit porttitor ipsum bibendum. Ante feugiat orci est, velit vulputate ultrices neque scelerisque. Sagittis vivamus conubia aliquam in sem sit odio. Magnis curae purus hendrerit nulla ridiculus. Conubia diam curae platea congue; montes ullamcorper tristique cras. Massa egestas in torquent purus imperdiet fringilla pretium. Massa montes inceptos sagittis varius nisi est.',
-      imageSmall: 'https://placehold.co/180x180',
-      imageMed: 'https://placehold.co/400x400',
+      imageSmall: smallSkeleton,
+      imageMed: medSkeleton,
       altText: '',
       liveLink: '',
       codeLink: 'https://github.com/RobVerplanke',
