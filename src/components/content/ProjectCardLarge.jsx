@@ -5,6 +5,8 @@ import htmlIcon from '../../assets/icons/html-icon.png';
 import csslIcon from '../../assets/icons/css-icon.png';
 import javascriptIcon from '../../assets/icons/js-icon.png';
 import reactIcon from '../../assets/icons/react-icon.png';
+import tailwindIcon from '../../assets/icons/tailwind-css-icon.png';
+import typeScriptIcon from '../../assets/icons/typescript-icon.png';
 
 import '../../styles/ProjectCardLarge.css';
 
@@ -14,6 +16,8 @@ const skillIcons = {
   css: csslIcon,
   javascript: javascriptIcon,
   react: reactIcon,
+  tailwind: tailwindIcon,
+  typescript: typeScriptIcon,
 };
 
 export function ProjectCardLarge({ isOpen, value }) {
