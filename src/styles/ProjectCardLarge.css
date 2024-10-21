@@ -71,6 +71,11 @@
   margin: 30px 30px 0 30px;
 }
 
+.project-card-large__text-nav-item {
+  font-weight: 700;
+  font-size: 0.8em;
+}
+
 @media (max-width: 600px) {
   .project-card-large {
     width: 100%;
