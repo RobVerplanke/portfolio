@@ -34,6 +34,6 @@ This portfolio will be continuously updated as I complete new projects and learn
 
 If you’re interested in collaborating or have any questions, feel free to reach out:
 
-- **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/rob-verplanke-jr)
-- **GitHub**: [Your GitHub Profile](https://github.com/RobVerplanke)
+- **LinkedIn**: [LinkedIn Profile](https://www.linkedin.com/in/rob-verplanke-jr)
+- **GitHub**: [GitHub Profile](https://github.com/RobVerplanke)
 - **Email**: rverplanke@gmail.com
