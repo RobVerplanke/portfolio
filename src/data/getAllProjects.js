@@ -19,6 +19,7 @@ export default function getAllProjects() {
       liveLink: 'https://lovely-vacherin-d4496c.netlify.app/',
       codeLink: 'https://github.com/RobVerplanke/project-shopping-cart',
       skills: ['html', 'css', 'javascript', 'react'],
+      isWebApp: true,
       selected: true,
     },
     {
@@ -32,7 +33,8 @@ export default function getAllProjects() {
       altText: '',
       liveLink: '',
       codeLink: 'https://github.com/RobVerplanke/cd-manager-react',
-      skills: ['html', 'css', 'javascript', 'react', 'typescript', 'tailwind'],
+      skills: ['typescript', 'react', 'tailwind'],
+      isWebApp: false,
       selected: true,
     },
     {
@@ -47,6 +49,7 @@ export default function getAllProjects() {
       liveLink: '',
       codeLink: 'https://github.com/RobVerplanke',
       skills: [],
+      isWebApp: true,
       selected: false,
     },
   ];

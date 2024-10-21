@@ -29,6 +29,7 @@ export function ProjectCardLarge({ isOpen, value }) {
     liveLink,
     codeLink,
     skills,
+    isWebApp,
   } = value;
 
   const formattedDescription = formatProjectDescription(description);
@@ -51,15 +52,17 @@ export function ProjectCardLarge({ isOpen, value }) {
           className="project-card-large__links"
         >
           {/* Link to live website */}
-          <a
-            className="text-nav-item"
-            tabIndex={isOpen ? '0' : '-1'}
-            aria-hidden={isOpen ? 'false' : 'true'}
-            href={liveLink}
-            target="_blank"
-          >
-            Live version
-          </a>
+          {isWebApp ? (
+            <a
+              className="project-card-large__text-nav-item"
+              href={liveLink}
+              target="_blank"
+            >
+              Live version
+            </a>
+          ) : (
+            <p className="project-card-large__text-nav-item">Local app</p>
+          )}
           <p>|</p>
 
           {/* Link to code on Github */}

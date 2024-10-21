@@ -17,6 +17,7 @@ export function ProjectCardSmall(props) {
     altText,
     liveLink,
     codeLink,
+    isWebApp,
   } = props.value;
 
   const formattedDescription = formatProjectDescription(description);
@@ -84,13 +85,17 @@ export function ProjectCardSmall(props) {
         </div>
         {/* Link for live preview and code */}
         <div className="project-card-small__links">
-          <a
-            className="project-card-small__text-nav-item"
-            href={liveLink}
-            target="_blank"
-          >
-            Live version
-          </a>
+          {isWebApp ? (
+            <a
+              className="project-card-small__text-nav-item"
+              href={liveLink}
+              target="_blank"
+            >
+              Live version
+            </a>
+          ) : (
+            <p>Local app</p>
+          )}
           <a
             className="project-card-small__text-nav-item"
             href={codeLink}
