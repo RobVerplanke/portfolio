@@ -46,6 +46,7 @@ export function ProjectCardSmall(props) {
             {isReadMoreActive ? (
               <>
                 {formattedDescription}
+                <br />
                 {/* Add a read more/less button at the end of a description text */}
                 <a
                   role="button"
