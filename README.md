@@ -1,33 +1,39 @@
-# My Portfolio
+# Web Development Portfolio
 
-Welcome to my portfolio. This project is built with React and Vite. It contains a collection of my completed projects and information about me as a developer.
+Welcome to my portfolio! This repository showcases my journey as a web developer. It contains a collection of projects I’ve completed while learning and applying new skills, as well as information about me and future goals.
 
-## Installation
+## Technologies Used
 
-Follow these steps to run the project locally:
+This portfolio and the projects within it are built using a variety of technologies, including:
 
-1. Clone the repository:
+- **JavaScript**
+- **TypeScript**
+- **React**
+- **Tailwind CSS**
+- **Vite**
 
-   ```sh
-   git clone https://github.com/RobVerplanke/portfolio.git
-   ```
+## About Me
 
-2. Navigate to the project directory:
+I’m a self-taught web developer based in Groningen, the Netherlands. I’ve been actively learning web development for the past two years, primarily through [The Odin Project](https://www.theodinproject.com/), a well-respected open-source curriculum for web development.
 
-   ```sh
-   cd portfolio
-   ```
+I enjoy the challenge of solving problems and creating efficient, user-friendly web applications. As I continue to build my skills, I keep on learning and apply new technologies and improve my code quality.
 
-3. Install the dependencies:
+## Future Goals
 
-   ```sh
-   npm install
-   ```
+My goal is to become a Junior Web Developer, and this portfolio is a reflection of my growth as an aspiring web developer.
+This portfolio will be continuously updated as I complete new projects and learn new technologies. Some of the next steps include:
 
-4. Start the development server:
+- Exploring **Node.js**
+- Building RESTful APIs with **Express**.
+- Applying more advanced **TypeScript** patterns.
+- Learning about state management with **Redux** or similar tools.
+- Enhancing projects with testing using **Jest** or **Vitest**.
+- Integrating backend and frontend for full-stack applications.
 
-   ```sh
-   npm run dev
-   ```
+## Contact
 
-5. Open the application in your browser at `http://localhost:<portnr>`.
+If you’re interested in collaborating or have any questions, feel free to reach out:
+
+- **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/rob-verplanke-jr)
+- **GitHub**: [Your GitHub Profile](https://github.com/RobVerplanke)
+- **Email**: rverplanke@gmail.com
