@@ -5,31 +5,45 @@ function About() {
         <h2>Who am i</h2>
         <br />
         <p>
-          I’m 42 and currently living in Groningen, the Netherlands. I completed
-          an MBO in Technical Informatics and pursued HBO studies in
-          Communication & Multimedia Design. During internships at various web
-          design companies, I gained valuable experience working on and building
-          websites for clients.
+          I am 42 years old and currently live in Groningen, the Netherlands,
+          where I completed an MBO in Technical Computer Science and followed an
+          HBO study in Communication & Multimedia Design. During internships at
+          various web design companies, I gained valuable experience working on
+          and building websites for clients.
           <br />
           <br />
-          After stepping away from web development for a long while, I decided
-          to dive back in and retrain myself, focusing on new technologies like
-          build tools and frameworks, which I find fascinating.
+          After my studies, I did not immediately find a position that matched
+          my ambitions, which is why I eventually started working in a different
+          direction. After working in various call centers for a number of
+          years, I found that these positions offered me too little challenge
+          and I had to take a new path.
           <br />
           <br />
-          What attracts me to web development is the challenge of
-          problem-solving and the constant opportunity to learn how to code
-          better and adapt to new techniques. I’ve built a solid foundation in
-          HTML, CSS, JavaScript, and React, and I’m continually working to
-          improve those and other skills through self-study. For now, my focus
-          is on becoming proficient in front-end development before exploring
-          other areas.
+          <h4>What inspires me</h4>
+          Technology and programming have always appealed to me. After a lot of
+          orientation, I discovered that web development nowadays makes
+          extensive use of modern technologies, build tools and frameworks. This
+          was new to me and fascinated me immediately. This gave me energy and a
+          lot of motivation to follow a self-study and dive into the field of
+          web development again.
           <br />
-          <br />I enjoy learning and have realized how important it is for me to
-          keep developing in my work, so I actively seek opportunities to grow
-          and evolve. Ultimately, my goal is to turn web development into my
-          full-time profession.
+          <br />
+          What I love about web development is the combination of structural,
+          analytical thinking and creating a positive user experience. Knowing
+          that my work is practical and valuable to users keeps me motivated to
+          grow and improve
+          <br />
+          <br />
+          <h4>My goal</h4>I have a solid foundation of fluency in HTML, CSS,
+          Javascript, Typescript and React and am constantly working on
+          improving these and other skills. I look for opportunities to work on
+          web applications where I can apply my knowledge and add value. My
+          focus is currently on front-end development, but I have ambitions to
+          explore other areas such as back-end development and server-side
+          rendering.
         </p>
+        <br />
+        <br />
       </section>
     </main>
   );

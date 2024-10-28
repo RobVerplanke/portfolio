@@ -12,7 +12,7 @@ export default function getAllProjects() {
       title: 'Multi Shopee',
       subTitle: 'Mock webshop',
       description:
-        'This project is part of The Odin Project curriculum. It is a mock shopping cart application built using React, implementing various techniques and methods covered throughout the course. \n## Introduction \n This project showcases routing, state management, data fetching from an API, and styling with CSS Modules to ensure scoped and maintainable styles. \n## Features \n The application includes a fully functional shop page with product listings, shopping cart functionality, and the ability to manage product quantities. \n## Technologies Used \n- React \n- React Router \n- React Testing Library for component testing \n- Data context for state management \n- Accessibility Guidelines \n- Vite for build en development \n- Vitest for unit testing',
+        'This project is part of The Odin Project curriculum. It is a mock shopping cart application built using React, implementing various techniques and methods covered throughout the course. \n## Introduction \n This project showcases routing, state management, data fetching from an API, and styling with CSS Modules to ensure scoped and maintainable styles. \n## Features \n The application includes a fron-end shopping app with product listings, shopping cart functionality, and the ability to manage product quantities. \n## Technologies Used \n Javascript \n- React \n- React Router \n- React Testing Library for component testing \n- Data context for state management \n- Accessibility Guidelines \n- Vite for build en development \n- Vitest for unit testing',
       imageSmall: shoppingCartSmallImage,
       imageMed: shoppingCartMedImage,
       altText: 'Screenshot of Multi Shoppee',
@@ -27,7 +27,7 @@ export default function getAllProjects() {
       title: 'CD-manager',
       subTitle: 'Manage your CD-collection',
       description:
-        'This app allows users to manage their personal CD collection locally. Users can add, edit, and remove albums, CDs, and tracks from their collection, rate each item, and organize their library with tags and categories. \n## Introduction \n This project showcases routing, state management, data fetching from an API, and styling with Tailwind. \n## Features \n Users can add new albums, CDs, and tracks to their collection, edit existing items, or remove items from the library. \n## Technologies Used \n- Typescript \n- React \n- React Router \n- React Testing Library for component testing \n- Data context for state management \n- Tailwind \n- Accessibility Guidelines \n- Vitest for unit testing',
+        'This app allows users to manage their personal CD collection locally. Users can add, edit, and remove albums, CDs, and tracks from their collection, rate each item, and organize their library with tags and categories. \n## Introduction \n This project showcases routing, state management, data fetching from an API and styling with Tailwind. \n## Features \n Users can add new albums, CDs, and tracks to their collection, edit existing items, or remove items from the library. \n## Technologies Used \n- Typescript \n- Tailwind \n- React \n- React Router \n- React Testing Library for component testing \n- Data context for state management \n- Accessibility Guidelines \n- Vite for build en development \n- Vitest for unit testing',
       imageSmall: cdManagerSmallImage,
       imageMed: cdManagerMedImage,
       altText: '',
@@ -42,7 +42,7 @@ export default function getAllProjects() {
       title: 'Message board',
       subTitle: 'COMING SOON',
       description:
-        'The next project will be a learning project, where i learn and apply NodeJs with Express to create a basic message board.',
+        'This project is part of The Odin Project curriculum, where i learn and apply SQL, NodeJs with Express to create a basic message board.',
       imageSmall: smallSkeleton,
       imageMed: medSkeleton,
       altText: '',
