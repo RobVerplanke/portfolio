@@ -7,12 +7,13 @@ export function HomePageTextContent() {
       <br />
       <p>
         <i>
-          With a passion for learning and building intuitive web experiences.
+          Driven by a passion for learning and building intuitive web
+          experiences.
         </i>
         <br />
         <br />
-        This portfolio showcases my journey so far, featuring projects that
-        highlight my growing skills in HTML, CSS, JavaScript, and React.
+        Reflects my journey as a developer so far, showcasing projects that
+        highlight my growing skills in web development.
       </p>
     </section>
   );
