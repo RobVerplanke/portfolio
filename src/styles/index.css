@@ -47,7 +47,7 @@ body {
 header {
   display: flex;
   background-color: var(--app-background-color);
-  border-top: 25px solid var(--border-top-color);
+  border-top: 45px solid var(--border-top-color);
 }
 
 main {
