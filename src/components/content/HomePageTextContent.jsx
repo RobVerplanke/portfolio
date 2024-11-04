@@ -6,10 +6,7 @@ export function HomePageTextContent() {
       <h2>An aspiring Front-End Developer</h2>
       <br />
       <p>
-        <i>
-          Driven by a passion for learning and building intuitive web
-          experiences.
-        </i>
+        <i>Driven by a passion for building intuitive web experiences.</i>
         <br />
         <br />
         Reflects my journey as a developer so far, showcasing projects that
