@@ -15,7 +15,7 @@ function About() {
           In addition to working on web applications, I enjoy staying fit by
           going to the gym regularly. I also like picking up the guitar and
           making music from time to time. Just like with programming and web
-          development, there&apos;s always more to learn! Which keeps me
+          development, there&apos;s always more to learn, what keeps me
           challenged. I&apos;ve noticed that these hobbies often give me a fresh
           perspective on the web development projects I&apos;m working on and
           help spark new ideas or better solutions.
