@@ -14,11 +14,9 @@ function About() {
           <br />
           In addition to working on web applications, I enjoy staying fit by
           going to the gym regularly. I also like picking up the guitar and
-          making music from time to time. Just like with programming and web
-          development, there&apos;s always more to learn, what keeps me
-          challenged. I&apos;ve noticed that these hobbies often give me a fresh
-          perspective on the web development projects I&apos;m working on and
-          help spark new ideas or better solutions.
+          making music from time to time. I&apos;ve noticed that these hobbies
+          often give me a fresh perspective on the web development projects
+          I&apos;m working on and help spark new ideas or better solutions.
           <br />
           <br />
           In my spare time, I also like to keep up with the latest developments
@@ -52,9 +50,9 @@ function About() {
           I have built a solid foundation in HTML, CSS, JavaScript, TypeScript,
           and React, and I actively work on developing these and other skills.
           In my recent projects, I&apos;ve gained deeper insights into state
-          management, routing, and using reducers. For my latest project, I took
-          it a step further by diving into TypeScript and Tailwind CSS, which I
-          then applied directly.
+          management, routing, and using reducers. For my latest projects, I
+          took it a step further by diving into TypeScript and Tailwind CSS,
+          which I then applied directly.
           <br />
           <br />
           With my structured work ethic and passion for technology, I can
