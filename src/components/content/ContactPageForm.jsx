@@ -33,6 +33,8 @@ export default function ContactForm() {
       return;
     }
 
+    console.log('formEntries: ', formEntries);
+
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },

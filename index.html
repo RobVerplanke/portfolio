@@ -18,5 +18,11 @@
     <div id="root">
       <script type="module" src="/src/main.jsx"></script>
     </div>
+    <!-- Hidden fallback form voor Netlify -->
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="subject" />
+      <input type="email" name="email" />
+      <textarea name="message"></textarea>
+    </form>
   </body>
 </html>

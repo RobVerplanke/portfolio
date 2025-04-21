@@ -24,7 +24,9 @@ function About() {
           and gives me ideas for future projects
           <br />
           <br />
-          <h4>Motivation</h4>
+        </p>
+        <h4>Motivation</h4>
+        <p>
           After working in call centers for several years, I realized that these
           roles ultimately didn&apos;t provide enough challenge. After a period
           of exploration, I understood that I needed to invest in a field that
@@ -46,7 +48,9 @@ function About() {
           keep challenging myself.
           <br />
           <br />
-          <h4>Future goals and development</h4>
+        </p>
+        <h4>Future goals and development</h4>
+        <p>
           I have built a solid foundation in HTML, CSS, JavaScript, TypeScript,
           and React, and I actively work on developing these and other skills.
           In my recent projects, I&apos;ve gained deeper insights into state
