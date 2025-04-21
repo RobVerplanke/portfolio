@@ -1,10 +1,11 @@
 /* eslint-disable react/no-unknown-property */
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import '../../styles/ContactForm.css';
 
 export default function ContactForm() {
+  const [errorMessage, setErrorMessage] = useState(null);
   const navigate = useNavigate();
   const inputRef = useRef(null);
 
@@ -24,6 +25,13 @@ export default function ContactForm() {
     const form = event.target;
     const formData = new FormData(form);
     const formEntries = Object.fromEntries(formData.entries());
+
+    const email = formEntries.email;
+    const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    if (!isValidEmail) {
+      setErrorMessage('Please enter a valid email address.');
+      return;
+    }
 
     fetch('/', {
       method: 'POST',
@@ -55,7 +63,6 @@ export default function ContactForm() {
           onSubmit={handleSubmit}
         >
           <input type="hidden" name="form-name" value="contact" />
-
           <label htmlFor="subject">Subject:</label>
           <br />
           <input
@@ -67,6 +74,24 @@ export default function ContactForm() {
             placeholder="Subject..."
           />
           <br />
+
+          <label htmlFor="subject">Email address:</label>
+          <br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            aria-label="email"
+            placeholder="Email adress..."
+            required
+          />
+          <br />
+
+          {errorMessage && (
+            <div>
+              <p className="error-message">{errorMessage}</p>
+            </div>
+          )}
 
           <label htmlFor="message">Message:</label>
           <br />
