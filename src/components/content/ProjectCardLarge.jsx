@@ -3,6 +3,7 @@
 import { formatProjectDescription } from '../../utils/helperFunctions.jsx';
 import htmlIcon from '../../assets/icons/html-icon.png';
 import csslIcon from '../../assets/icons/css-icon.png';
+import sassIcon from '../../assets/icons/icons8-sass.png';
 import javascriptIcon from '../../assets/icons/js-icon.png';
 import reactIcon from '../../assets/icons/react-icon.png';
 import tailwindIcon from '../../assets/icons/tailwind-css-icon.png';
@@ -14,6 +15,7 @@ import '../../styles/ProjectCardLarge.css';
 const skillIcons = {
   html: htmlIcon,
   css: csslIcon,
+  scss: sassIcon,
   javascript: javascriptIcon,
   react: reactIcon,
   tailwind: tailwindIcon,
@@ -76,10 +78,8 @@ export function ProjectCardLarge({ isOpen, value }) {
             View code
           </a>
         </div>
-        <br />
 
         {/* Description of the project */}
-
         <div className="project-card-large__description">
           {formattedDescription}
         </div>

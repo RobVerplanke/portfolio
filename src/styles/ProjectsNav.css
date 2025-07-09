@@ -74,7 +74,7 @@ main:last-child {
   align-items: center;
   width: 100%;
   cursor: default;
-  color: var(--font-color-grey);
+  color: var(--font-color-dark);
   background-color: var(--card-background-color);
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
@@ -90,7 +90,6 @@ main:last-child {
 
 .menu-container__item:hover {
   background-color: var(--card-active-color);
-  color: var(--accordion-hover-font-color);
 }
 
 .menu-container__item__title-container {
