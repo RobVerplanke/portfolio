@@ -5,61 +5,76 @@ function About() {
         <h2>Who am i</h2>
         <br />
         <p>
-          Currently, I live in Groningen, where I completed an MBO in Technical
-          Informatics. I then pursued an HBO degree in Communication &
-          Multimedia Design. During internships at various web design companies,
-          I gained experience in developing and maintaining websites in a
-          professional setting
+          Currently, I live in Groningen, where I completed an MBO(4) education
+          in Technical Informatics.
+          <br />I then pursued an HBO degree in Communication & Multimedia
+          Design.
+          <br />
+          During internships at various web design companies, I gained
+          experience in developing and maintaining websites in a professional
+          setting.
           <br />
           <br />
           In addition to working on web applications, I enjoy staying fit by
-          going to the gym regularly. I also like picking up the guitar and
-          making music from time to time. I&apos;ve noticed that these hobbies
-          often give me a fresh perspective on the web development projects
-          I&apos;m working on and help spark new ideas or better solutions.
+          going to the gym regularly.
+          <br />I also enjoy picking up the guitar and learning to play music
+          from time to time.
           <br />
-          <br />
-          In my spare time, I also like to keep up with the latest developments
-          in the tech world. This helps me stay up-to-date with new knowledge
-          and gives me ideas for future projects
+          These hobbies often give me a fresh perspective on the projects
+          I&apos;m working on and help me getting new ideas or better solutions.
           <br />
           <br />
         </p>
         <h4>Motivation</h4>
         <p>
           After working in call centers for several years, I realized that these
-          roles ultimately didn&apos;t provide enough challenge. After a period
-          of exploration, I understood that I needed to invest in a field that
-          would truly give me fulfillment: technology and programming.
+          roles didn’t challenge me enough.
           <br />
-          The possibilities within modern web development, such as working with
-          frameworks and new tools, refuled my passion. This discovery brought
-          new energy and strengthened my ambition to continue my career in this
-          field. I decided to deepen my knowledge through self-study in web
-          development.
+          After a period of exploration, I understood that I needed to focus on
+          a field that I’ve always loved and that gives me challenges and
+          fulfillment: web development.
+          <br />
+          <br />I decided to start following{' '}
+          <u>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="http://www.theodinproject.com"
+            >
+              The Odin Project
+            </a>
+          </u>
+          , an online learning platform for web development.
+          <br />
+          It gave me a deeper understanding of how to build projects with HTML,
+          CSS, JavaScript, and various modern tools and frameworks.
           <br />
           <br />
-          What excites to me about web development is the combination of
-          analytical thinking and creating user-friendly solutions. With each
-          project completed, I increasingly realize the importance of structured
-          work. This challenges me to develop a well-thought-out approach for
-          every task and to work with precision. My goal is always to exceed (my
-          own) expectations, which gives me great satisfaction and drives me to
-          keep challenging myself.
+          What excites me about web development is the combination of analytical
+          thinking and creating user-friendly solutions.
+          <br />
+          With each project I complete, I realize the importance of structured
+          planning and work.
+          <br />
+          This challenges me to develop a well-thought-out approach for every
+          new project and to work with precision.
           <br />
           <br />
         </p>
         <h4>Future goals and development</h4>
         <p>
           I have built a solid foundation in HTML, CSS, JavaScript, TypeScript,
-          and React, and I actively work on developing these and other skills.
-          In my recent projects, I&apos;ve gained deeper insights into state
-          management, routing, and using reducers. For my latest projects, I
-          took it a step further by diving into TypeScript and Tailwind CSS,
-          which I then applied directly.
+          and React.
+          <br />I learned the basics of Vue, Node.js and I actively work on
+          developing these and other skills.
           <br />
           <br />
-          With my structured work ethic and passion for technology, I can
+          In my recent projects, I&apos;ve gained deeper insights into
+          Redux-Toolkit state management, set up back-end API endpoints and used
+          Sass for styling.
+          <br />
+          <br />
+          With my structured mindset and passion for technology, I can
           contribute to a positive and productive work environment where we work
           together to build high-quality applications.
           <br />

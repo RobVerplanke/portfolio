@@ -11,6 +11,8 @@
   --app-background-color: #dbdbdb;
   --border-top-color: #333333;
   --font-color-dark: #333333;
+  --card-background-color: #dbdbdb;
+  --card-border-color: #b5b5b5;
 
   /* Global properties */
   font-family: 'Montserrat', sans-serif;

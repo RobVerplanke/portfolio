@@ -4,7 +4,7 @@
   --font-color-dark: #333333;
   --font-color-grey: #636363;
   --accordion-hover-font-color: #333333;
-  --card-background-color: #b1b1b1;
+  --menu-container-background-color: #b1b1b1;
   --card-active-color: #00d7df;
   --cards-max-width: 600px;
   --menu-button-size: 50px;
@@ -75,7 +75,7 @@ main:last-child {
   width: 100%;
   cursor: default;
   color: var(--font-color-dark);
-  background-color: var(--card-background-color);
+  background-color: var(--menu-container-background-color);
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 

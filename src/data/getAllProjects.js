@@ -28,7 +28,7 @@ export default function getAllProjects() {
     },
     {
       id: 3,
-      title: `Copy & Print shop 't Hartje`,
+      title: `Copy & Print shop`,
       subTitle: 'Company website',
       description:
         'This project is a complete redesign of a local print shop’s website, created as a self-initiated learning project. The goal was to modernize the interface, improve usability, and enhance maintainability with a structured and scalable codebase. \n## Introduction \n This project showcases dynamic content rendering, state management and responsive design while focusing on user experience and accessibility. \n## Features \n Fully responsive layout with a clean, modern UI. \n Dynamic pricing tables. \n Dynamic content cards. \n Multilingual support with instant content translation. \n Light and dark theme options. \n Accessibility enhancements following WCAG guidelines. \n## Technologies Used \n- TypeScript \n- React \n- React Router \n- Tailwind CSS \n- Data context for state management \n- Vite for build and development \n- i18next for translations \n- Netlify for deployment',
