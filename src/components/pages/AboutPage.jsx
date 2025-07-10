@@ -63,15 +63,14 @@ function About() {
         </p>
         <h4>Future goals and development</h4>
         <p>
-          I have built a solid foundation in HTML, CSS, JavaScript, TypeScript,
-          and React.
-          <br />I learned the basics of Vue, Node.js and I actively work on
-          developing these and other skills.
+          I have built a solid foundation in HTML, JavaScript, TypeScript, React
+          and Tailwind CSS.
+          <br />I learned the basics of Vue, Node.js, Sass and I actively work
+          on developing these and other skills.
           <br />
           <br />
-          In my recent projects, I&apos;ve gained deeper insights into
-          Redux-Toolkit state management, set up back-end API endpoints and used
-          Sass for styling.
+          In my most recent project, I&apos;ve gained deeper insights into
+          Redux-Toolkit state management and set up back-end API endpoints.
           <br />
           <br />
           With my structured mindset and passion for technology, I can

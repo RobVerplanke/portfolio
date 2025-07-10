@@ -16,7 +16,7 @@ export default function getAllProjects() {
       title: 'Bicycle shop',
       subTitle: 'Mock webshop',
       description:
-        'This project is a full-stack webshop application built as a learning project to deepen my knowledge in modern web development. \n## Introduction \n This project highlights the integration of frontend and backend technologies, focusing on efficient state management and robust data handling. \n## Features \n A responsive webshop interface with product filtering and sorting. \n Dynamic product data fetching from a custom Express backend. \n Product storage using a database. \n State management with Redux Toolkit. \n Styling with SCSS. \n## Technologies Used \n- TypeScript \n- React \n- React Router \n- Redux Toolkit \n- SCSS \n- Express \n- Supabase \n- Accessibility Guidelines \n- Vite for build and development',
+        'This project is a full-stack webshop application built as a learning project to deepen my knowledge in modern web development. \n## Introduction \n This project highlights the integration of frontend and backend technologies, focusing on efficient state management and robust data handling. \n## Features \n A responsive webshop interface with product filtering and sorting. \n Rate and review products \n Dynamic product data fetching from a custom Express backend. \n Product storage using a database. \n State management with Redux Toolkit. \n Styling with SCSS. \n## Technologies Used \n- TypeScript \n- React \n- React Router \n- Redux Toolkit \n- SCSS \n- Express \n- Supabase \n- Accessibility Guidelines \n- Vite for build and development',
       imageSmall: bikeShopSmall,
       imageMed: bikeShopMed,
       altText: 'Screenshot of Bicycle shop website',
