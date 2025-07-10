@@ -65,12 +65,14 @@ function About() {
         <p>
           I have built a solid foundation in HTML, JavaScript, TypeScript, React
           and Tailwind CSS.
-          <br />I learned the basics of Vue, Node.js, Sass and I actively work
-          on developing these and other skills.
+          <br />
+          I’ve also expolored the basics of Vue, Sass and I actively work on
+          developing these and other skills.
           <br />
           <br />
-          In my most recent project, I&apos;ve gained deeper insights into
-          Redux-Toolkit state management and set up back-end API endpoints.
+          In my most recent project, I&apos;ve gained deeper insights into Redux
+          Toolkit state management and set up back-end API endpoints using
+          Express on Node.js.
           <br />
           <br />
           With my structured mindset and passion for technology, I can
