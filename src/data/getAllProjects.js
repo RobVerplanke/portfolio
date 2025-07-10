@@ -47,7 +47,7 @@ export default function getAllProjects() {
       title: 'CD-manager',
       subTitle: 'Manage your CD-collection',
       description:
-        'This app allows users to manage their personal CD collection locally. Users can add, edit, and remove albums, CDs, and tracks from their collection, rate each item, and organize their library with tags and categories. \n## Introduction \n This project showcases routing, state management, data fetching from an API and styling with Tailwind. \n## Features \n Users can add new albums, CDs, and tracks to their collection, edit existing items, or remove items from the library. \n## Technologies Used \n- Typescript \n- Tailwind CSS \n- React \n- React Router \n- React Testing Library for component testing \n- Data context for state management \n- Accessibility Guidelines \n- Vite for build en development \n- Vitest for unit testing',
+        'This app allows users to manage their personal CD collection locally. Users can add, edit, and remove albums, CDs, and tracks from their collection, rate each item, and organize their library with tags and categories. \n## Introduction \n This project showcases routing, state management, data fetching from an API and styling with Tailwind. \n## Features \n Users can add new albums, CDs, and tracks to their collection, edit existing items, or remove items from the library. \n## Technologies Used \n- Typescript \n- Tailwind CSS \n- React \n- React Router \n- React Testing Library for component testing \n- Data context for state management \n- Accessibility Guidelines \n- Vitest for unit testing \n- Vite for build en development',
       imageSmall: cdManagerSmallImage,
       imageMed: cdManagerMedImage,
       altText: 'Screenshot of CD-manager app',
