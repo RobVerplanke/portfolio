@@ -5,88 +5,55 @@ function About() {
         <h2>Who am i</h2>
         <br />
         <p>
-          Currently, I live in Groningen, where I completed an MBO(4) education
-          in Technical Informatics.
-          <br />I then pursued an HBO degree in Communication & Multimedia
-          Design.
-          <br />
-          During internships at various web design companies, I gained
-          experience in developing and maintaining websites in a professional
-          setting.
-          <br />
-          <br />
-          In addition to working on web applications, I enjoy staying fit by
-          going to the gym regularly.
-          <br />I also enjoy picking up the guitar and learning to play music
-          from time to time.
-          <br />
-          These hobbies often give me a fresh perspective on the projects
-          I&apos;m working on and help me getting new ideas or better solutions.
-          <br />
-          <br />
+          Currently living in Groningen, where I completed a MBO level 4 qualification in Technical Informatics. After that, I pursued an HBO degree in Communication & Multimedia Design at various universities of applied sciences. During internships at multiple multimedia companies, I gained experience developing and maintaining websites in a professional work environment.
         </p>
+        <br />
+        <p>
+            Besides working on web applications, I like to stay fit by regularly going to the gym, and occasionally I pick up the guitar to learn to play music.
+        </p>
+        <br />
+        <br />
         <h4>Motivation</h4>
         <p>
-          After working in call centers for several years, I realized that these
-          roles didn’t challenge me enough.
-          <br />
-          After a period of exploration, I understood that I needed to focus on
-          a field that I’ve always loved and that gives me challenges and
-          fulfillment: web development.
-          <br />
-          <br />I decided to start following{' '}
-          <u>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="http://www.theodinproject.com"
+          After working in call centers for several years, I realized this work did not offer me sufficient challenge. After a period of reorientation, I realized I wanted to fully focus on a field I had always been interested in: web development.
+        </p>
+        <br />
+        <p>
+          Therefore, I decided to start <nbsp></nbsp>
+        <u>
+          <a target="_blank" rel="noopener noreferrer"
+            href="http://www.theodinproject.com"
             >
               The Odin Project
-            </a>
+          </a>
           </u>
-          , an online learning platform for web development.
-          <br />
-          It gave me a deeper understanding of how to build projects with HTML,
-          CSS, JavaScript, and various modern tools and frameworks.
-          <br />
-          <br />
-          What excites me about web development is the combination of analytical
-          thinking and creating user-friendly solutions.
-          <br />
-          With each project I complete, I realize the importance of structured
-          planning and work.
-          <br />
-          This challenges me to develop a well-thought-out approach for every
-          new project and to work with precision.
-          <br />
-          <br />
+          <nbsp></nbsp> in 2022, an online learning platform for web development. This gave me greater insight into building modern web applications in HTML, CSS, JavaScript, and React.
         </p>
-        <h4>Future goals and development</h4>
+        <br />
         <p>
-          I have built a solid foundation in HTML, JavaScript, TypeScript, React
-          and Tailwind CSS.
-          <br />
-          I’ve also expolored the basics of Vue, Sass and I actively work on
-          developing these and other skills.
-          <br />
-          <br />
-          In my most recent project, I&apos;ve gained deeper insights into Redux
-          Toolkit state management and set up back-end API endpoints using
-          Express on Node.js.
-          <br />
-          <br />
-          With my structured mindset and passion for technology, I can
-          contribute to a positive and productive work environment where we work
-          together to build high-quality applications.
-          <br />
-          <br />
+          What appeals to me about web development is the combination of analytical thinking and creating user-friendly solutions. Each completed project confirms for me the importance of structured work and challenges me to approach future projects even more thoughtfully and prepare even better.
+        </p>
+        <br />
+        <br />
+
+        <h4>Development and future goals</h4>
+        <p>
+          I have built a solid foundation in HTML, JavaScript, TypeScript, and React. Additionally, I have become acquainted with Vue, Laravel, Tailwind CSS, and Sass. I am actively working on further developing these and other skills.
+        </p>
+        <br />
+        <p>
+          With my structured approach and passion for technology, I can contribute to a positive and productive work environment, where we build high-quality applications together.
+        </p>
+        <br />
+        <br />
+        <p>
           Feel free to reach out if you&apos;d like to connect or discuss
           potential collaborations!
         </p>
-        <br />
-        <br />
-      </section>
-    </main>
+      <br />
+      <br />
+    </section>
+  </main>
   );
 }
 
