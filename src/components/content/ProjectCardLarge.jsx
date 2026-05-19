@@ -1,15 +1,16 @@
 /* eslint-disable react/prop-types */
 
-import { formatProjectDescription } from '../../utils/helperFunctions.jsx';
-import htmlIcon from '../../assets/icons/html-icon.png';
-import csslIcon from '../../assets/icons/css-icon.png';
-import sassIcon from '../../assets/icons/icons8-sass.png';
-import javascriptIcon from '../../assets/icons/js-icon.png';
-import reactIcon from '../../assets/icons/react-icon.png';
-import tailwindIcon from '../../assets/icons/tailwind-css-icon.png';
-import typeScriptIcon from '../../assets/icons/typescript-icon.png';
+import { formatProjectDescription } from "../../utils/helperFunctions.jsx";
+import htmlIcon from "../../assets/icons/html-icon.png";
+import csslIcon from "../../assets/icons/css-icon.png";
+import sassIcon from "../../assets/icons/icons8-sass.png";
+import javascriptIcon from "../../assets/icons/js-icon.png";
+import reactIcon from "../../assets/icons/react-icon.png";
+import tailwindIcon from "../../assets/icons/tailwind-css-icon.png";
+import typeScriptIcon from "../../assets/icons/typescript-icon.png";
+import expressIcon from "../../assets/icons/express-icon-tr.png";
 
-import '../../styles/ProjectCardLarge.css';
+import "../../styles/ProjectCardLarge.css";
 
 // Used to generate icons dynamicly from the object
 const skillIcons = {
@@ -20,6 +21,7 @@ const skillIcons = {
   react: reactIcon,
   tailwind: tailwindIcon,
   typescript: typeScriptIcon,
+  expressJS: expressIcon,
 };
 
 export function ProjectCardLarge({ isOpen, value }) {
@@ -70,8 +72,8 @@ export function ProjectCardLarge({ isOpen, value }) {
           {/* Link to code on Github */}
           <a
             className="text-nav-item"
-            tabIndex={isOpen ? '0' : '-1'}
-            aria-hidden={isOpen ? 'false' : 'true'}
+            tabIndex={isOpen ? "0" : "-1"}
+            aria-hidden={isOpen ? "false" : "true"}
             href={codeLink}
             target="_blank"
           >

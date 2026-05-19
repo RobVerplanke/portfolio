@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: flex-start;
   max-width: 600px;
-  background-color: var(--card-background-color);
+  background-color: #dbdbdb;
   border-left: 1px solid var(--card-border-color);
   border-right: 1px solid var(--card-border-color);
 }
