@@ -39,8 +39,8 @@ export default function getAllProjects() {
       imageSmall: corveeAppSmallImage,
       imageMed: corveeAppMedImage,
       altText: "Screenshot of corvee app",
-      liveLink: "",
-      codeLink: "https://corvee-app-portfolio-production.up.railway.app",
+      liveLink: "https://corvee-app-portfolio-production.up.railway.app",
+      codeLink: "https://github.com/RobVerplanke/Corvee-app-portfolio",
       skills: ["expressJS", "javascript", "css"],
       isWebApp: true, // Local App or Live website
       selected: true, // Selected to be displayd on homepage
