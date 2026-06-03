@@ -40,9 +40,9 @@ export default function getAllProjects() {
       imageMed: corveeAppMedImage,
       altText: "Screenshot of corvee app",
       liveLink: "",
-      codeLink: "https://github.com/Aletho-ICT-Dagbesteding/Corvee-app",
+      codeLink: "https://corvee-app-portfolio-production.up.railway.app",
       skills: ["expressJS", "javascript", "css"],
-      isWebApp: false, // Local App or Live website
+      isWebApp: true, // Local App or Live website
       selected: true, // Selected to be displayd on homepage
     },
     {
